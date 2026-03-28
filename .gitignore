@@ -39,3 +39,17 @@
 
 # Alarm history files
 **/.alarms_*
+
+# Runtime gateway files (environment-specific, auto-generated)
+gateway.xml_clean
+commissioning.json
+redundancy.xml
+*.gwbk
+*.pid
+
+# Ignition-managed core/external resources (not user-edited)
+# config/resources/core/
+# config/resources/external/
+
+# May contain sensitive credentials
+email-profiles/

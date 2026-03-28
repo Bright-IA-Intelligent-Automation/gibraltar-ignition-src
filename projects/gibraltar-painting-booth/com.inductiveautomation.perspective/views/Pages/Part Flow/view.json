@@ -1,0 +1,702 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "lblTitle"
+            },
+            "props": {
+              "style": {
+                "color": "#1f2937",
+                "fontSize": "22px",
+                "fontWeight": "700"
+              },
+              "text": "Part Flow and Handshake"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "lblHeaderInfo"
+            },
+            "props": {
+              "style": {
+                "color": "#4b5563",
+                "fontSize": "13px"
+              },
+              "text": "Line: Coating | Current Part: BW-33-00871 | Recipe: 33FT_STD"
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "space-between",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "borderRadius": "8px",
+            "boxShadow": "0 1px 3px rgba(0,0,0,0.12)",
+            "padding": "10px 14px"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblInPosTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Part In Position"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblInPosValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "TRUE"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tilePartInPosition"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblHsStateTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Handshake State"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblHsStateValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#2563eb",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "PAINTING"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileHandshakeState"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblScrTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Station Clear Response"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblScrValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "3.2 sec"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblScrTarget"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "12px"
+                  },
+                  "text": "Target \u003c\u003d 5 sec"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileStationClearResponse"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblMissedTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Missed Handshakes"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblMissedValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "0"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblMissedNote"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Current shift"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileMissedHandshakes"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "kpiRow"
+        },
+        "props": {
+          "gap": "10px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblSequenceTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Handshake Sequence"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblStep1"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "13px"
+                  },
+                  "text": "1) Request Part \u003d TRUE"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblStep2"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "13px"
+                  },
+                  "text": "2) Conveyor In Position \u003d TRUE"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblStep3"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "13px"
+                  },
+                  "text": "3) Paint Start Command \u003d TRUE"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblStep4"
+                },
+                "props": {
+                  "style": {
+                    "color": "#b45309",
+                    "fontSize": "13px",
+                    "fontWeight": "700"
+                  },
+                  "text": "4) Paint Complete \u003d FALSE (in progress)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblStep5"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "13px"
+                  },
+                  "text": "5) Station Clear \u003d FALSE"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblStep6"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "13px"
+                  },
+                  "text": "6) Release Conveyor \u003d FALSE"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "handshakeSequenceCard"
+            },
+            "position": {
+              "grow": 2
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "2",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblSignalsTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Live Handshake Signals"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblSigRequest"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "13px"
+                  },
+                  "text": "Request Part: TRUE"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblSigPresent"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "13px"
+                  },
+                  "text": "Part Present Sensor: TRUE"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblSigPaintStart"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "13px"
+                  },
+                  "text": "Paint Start: TRUE"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblSigPaintComplete"
+                },
+                "props": {
+                  "style": {
+                    "color": "#b45309",
+                    "fontSize": "13px"
+                  },
+                  "text": "Paint Complete: FALSE"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblSigStationClear"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "13px"
+                  },
+                  "text": "Station Clear: FALSE"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "signalsCard"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "middleRow"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "gap": "12px",
+          "style": {
+            "flex": "1"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblTimelineTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Part Flow Timeline"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblTimelineHint"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Use chart for handshake timestamps: request, in-position, paint start, paint complete, station clear, release."
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblTimelinePlaceholder"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#64748b",
+                        "fontSize": "13px"
+                      },
+                      "text": "Timeline Placeholder"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "timelinePlaceholder"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#f8fafc",
+                    "borderRadius": "6px",
+                    "minHeight": "150px",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "timelineCard"
+            },
+            "position": {
+              "grow": 2
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "2",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblActionsTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Operator Actions"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "btnRequestPart"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2563eb",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Request Next Part"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "btnForceClear"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#334155",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Force Station Clear (Permitted)"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "btnHsLog"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#16a34a",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Open Handshake Event Log"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "lblTimeoutInfo"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px",
+                    "marginTop": "6px"
+                  },
+                  "text": "Timeout alarm threshold: 8 sec (TBD)"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "actionCard"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "bottomRow"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "gap": "12px",
+          "style": {
+            "flex": "1"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

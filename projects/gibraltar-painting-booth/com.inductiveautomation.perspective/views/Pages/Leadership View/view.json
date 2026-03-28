@@ -1,0 +1,736 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "lblTitle"
+            },
+            "props": {
+              "style": {
+                "color": "#1f2937",
+                "fontSize": "22px",
+                "fontWeight": "700"
+              },
+              "text": "Management Dashboard"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "lblContext"
+            },
+            "props": {
+              "style": {
+                "color": "#4b5563",
+                "fontSize": "13px"
+              },
+              "text": "Period: Today | Site: Gibraltar | Last Refresh: 2026-03-24 14:40"
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "space-between",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "borderRadius": "8px",
+            "boxShadow": "0 1px 3px rgba(0,0,0,0.12)",
+            "padding": "10px 14px"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblOutputTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Output vs Plan"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblOutputValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "342 / 330"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblOutputDelta"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "12px"
+                  },
+                  "text": "+3.6%"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileThroughput"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblOEETitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "OEE"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblOEEValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "81.7%"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblOEETarget"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "12px"
+                  },
+                  "text": "Target \u003e\u003d 80%"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileOEE"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblQualityTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "First Pass Yield"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblQualityValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "95.2%"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblQualityRework"
+                },
+                "props": {
+                  "style": {
+                    "color": "#b45309",
+                    "fontSize": "12px"
+                  },
+                  "text": "Rework: 4.8%"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileQuality"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblCostTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Coating Cost / Panel"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCostValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "$148.20"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCostDelta"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "12px"
+                  },
+                  "text": "-2.3% vs last week"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileCost"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "executiveKpiRow"
+        },
+        "props": {
+          "gap": "10px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblTrendTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Performance Trend (7 Days)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblTrendHint"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Place Time Series Chart for Throughput, OEE, FPY, and Downtime."
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblTrendPlaceholder"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#64748b",
+                        "fontSize": "13px"
+                      },
+                      "text": "Chart Placeholder"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "trendPlaceholder"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#f8fafc",
+                    "borderRadius": "6px",
+                    "minHeight": "180px",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "trendCard"
+            },
+            "position": {
+              "grow": 2
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "2",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblRiskTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Risk and Exceptions"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblRisk1"
+                },
+                "props": {
+                  "style": {
+                    "color": "#b45309",
+                    "fontSize": "13px"
+                  },
+                  "text": "1) Paint Ready loss above threshold (14 min)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblRisk2"
+                },
+                "props": {
+                  "style": {
+                    "color": "#dc2626",
+                    "fontSize": "13px"
+                  },
+                  "text": "2) Robot 3 repeat faults (3 events)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblRisk3"
+                },
+                "props": {
+                  "style": {
+                    "color": "#b45309",
+                    "fontSize": "13px"
+                  },
+                  "text": "3) Downtime trending +8% week-over-week"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "btnExceptions"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2563eb",
+                    "color": "#ffffff",
+                    "fontWeight": "700",
+                    "marginTop": "8px"
+                  },
+                  "text": "View Full Exception Report"
+                },
+                "type": "ia.input.button"
+              }
+            ],
+            "meta": {
+              "name": "riskCard"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "middleRow"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "gap": "12px",
+          "style": {
+            "flex": "1"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblCostBreakdownTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Cost Breakdown (Today)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCostMaterial"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "Material: $50,684"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCostRework"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "Rework: $3,420"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCostDowntime"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "Downtime impact: $4,980"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "costBreakdownCard"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblCapacityTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Capacity Outlook"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCapacityForecast"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "Projected end-of-shift output: 347"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCapacityMax"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "Max practical capacity: 360"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCapacityConstraint"
+                },
+                "props": {
+                  "style": {
+                    "color": "#b45309",
+                    "fontSize": "13px"
+                  },
+                  "text": "Constraint: Robot faults and paint-ready delays"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "capacityCard"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblActionsTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Management Actions"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "btnExecReport"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2563eb",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Open Daily Executive Report"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "btnDowntimeReview"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#334155",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Open Downtime Review"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "btnExportSnapshot"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#16a34a",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Export KPI Snapshot"
+                },
+                "type": "ia.input.button"
+              }
+            ],
+            "meta": {
+              "name": "actionsCard"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "bottomRow"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "gap": "12px",
+          "style": {
+            "flex": "1"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

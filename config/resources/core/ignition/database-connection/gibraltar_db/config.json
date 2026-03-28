@@ -1,0 +1,36 @@
+{
+  "connectURL": "jdbc:postgresql://postgres_gibraltar:5432/ignition_gibraltar",
+  "connectionProps": "",
+  "connectionResetParams": "",
+  "defaultTransactionLevel": "DEFAULT",
+  "driver": "PostgreSQL",
+  "evictionRate": -1,
+  "evictionTests": 3,
+  "evictionTime": 1800000,
+  "failoverMode": "STANDARD",
+  "failoverProfile": "",
+  "includeSchemaInTableName": false,
+  "password": {
+    "data": {
+      "ciphertext": "DF_38wy0rjIgOFiRGco",
+      "encrypted_key": "oGh1q_rO0jf121goSjJ7KmcGW-SZkycVqQcY1R6qM8zL0_ISOGEKMA",
+      "iv": "y3Y4Tuf_BfdCOrjJ",
+      "protected": "eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2R0NNIiwiaWF0IjoxNzc0MzExNDE1LCJ6aXAiOiJERUYifQ",
+      "tag": "rMW6-qOZzA7Val4tVIWZDw"
+    },
+    "type": "Embedded"
+  },
+  "poolInitSize": 0,
+  "poolMaxActive": 8,
+  "poolMaxIdle": 8,
+  "poolMaxWait": 5000,
+  "poolMinIdle": 0,
+  "slowQueryLogThreshold": 60000,
+  "testOnBorrow": true,
+  "testOnReturn": false,
+  "testWhileIdle": false,
+  "translator": "POSTGRES",
+  "username": "ignition",
+  "validationQuery": "SELECT 1",
+  "validationSleepTime": 10000
+}

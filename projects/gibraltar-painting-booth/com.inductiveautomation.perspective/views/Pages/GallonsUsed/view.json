@@ -1,0 +1,582 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "lblTitle"
+            },
+            "props": {
+              "style": {
+                "color": "#1f2937",
+                "fontSize": "22px",
+                "fontWeight": "700"
+              },
+              "text": "Paint System + Gallons KPI"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "lblHeaderState"
+            },
+            "props": {
+              "style": {
+                "color": "#374151",
+                "fontSize": "13px"
+              },
+              "text": "Booth A READY | Booth B READY | Recipe: 33FT_STD"
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "topHeader"
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "space-between",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "borderRadius": "8px",
+            "boxShadow": "0 1px 3px rgba(0,0,0,0.12)",
+            "padding": "10px 14px"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblReadinessTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Paint System Readiness"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblTempKey"
+                        },
+                        "props": {
+                          "text": "Paint Temp OK"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblTempVal"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#16a34a",
+                            "fontWeight": "700"
+                          },
+                          "text": "TRUE"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "rowTemp"
+                    },
+                    "props": {
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblHumidityKey"
+                        },
+                        "props": {
+                          "text": "Humidity OK"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblHumidityVal"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#16a34a",
+                            "fontWeight": "700"
+                          },
+                          "text": "TRUE"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "rowHumidity"
+                    },
+                    "props": {
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblAirKey"
+                        },
+                        "props": {
+                          "text": "Air Pressure OK"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblAirVal"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#16a34a",
+                            "fontWeight": "700"
+                          },
+                          "text": "TRUE"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "rowAirPressure"
+                    },
+                    "props": {
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblReadyKey"
+                        },
+                        "props": {
+                          "text": "Paint System Ready"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblReadyVal"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#16a34a",
+                            "fontWeight": "700"
+                          },
+                          "text": "TRUE"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "rowSystemReady"
+                    },
+                    "props": {
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "paintReadinessCard"
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblCompUsageTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Polyurea Component Usage"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "lblCompATitle"
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#64748b",
+                                "fontSize": "12px"
+                              },
+                              "text": "Component A (gal)"
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "lblCompAValue"
+                            },
+                            "props": {
+                              "style": {
+                                "fontSize": "26px",
+                                "fontWeight": "700"
+                              },
+                              "text": "162.8"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "compA"
+                        },
+                        "position": {
+                          "grow": 1
+                        },
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#f8fafc",
+                            "borderRadius": "6px",
+                            "flex": "1",
+                            "padding": "10px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "lblCompBTitle"
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#64748b",
+                                "fontSize": "12px"
+                              },
+                              "text": "Component B (gal)"
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "lblCompBValue"
+                            },
+                            "props": {
+                              "style": {
+                                "fontSize": "26px",
+                                "fontWeight": "700"
+                              },
+                              "text": "155.6"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "compB"
+                        },
+                        "position": {
+                          "grow": 1
+                        },
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#f8fafc",
+                            "borderRadius": "6px",
+                            "flex": "1",
+                            "padding": "10px"
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "compUsageRow"
+                    },
+                    "props": {
+                      "gap": "10px"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "componentUsageCard"
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "10px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "leftPanel"
+            },
+            "position": {
+              "grow": 2
+            },
+            "props": {
+              "direction": "column",
+              "gap": "10px",
+              "style": {
+                "flex": "2"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblGallonsShiftTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "14px"
+                      },
+                      "text": "Paint Used (Shift)"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblGallonsShiftValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "34px",
+                        "fontWeight": "800",
+                        "marginTop": "2px"
+                      },
+                      "text": "318.4 gal"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblGallonsShiftTarget"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "12px",
+                        "marginTop": "6px"
+                      },
+                      "text": "Target: 335 gal max"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "gallonsKPI"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblGalPanelTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "14px"
+                      },
+                      "text": "Gallons per Panel"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblGalPanelValue"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "1.86 gal/panel"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPanelsDone"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "12px",
+                        "marginTop": "6px"
+                      },
+                      "text": "Panels completed: 171"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "efficiencyKPI"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblActionsTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Operator Actions"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "btnAckPaintAlarm"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#2563eb",
+                        "color": "#ffffff",
+                        "fontWeight": "600"
+                      },
+                      "text": "Acknowledge Paint Alarm"
+                    },
+                    "type": "ia.input.button"
+                  },
+                  {
+                    "meta": {
+                      "name": "btnOpenPurge"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#475569",
+                        "color": "#ffffff",
+                        "fontWeight": "600"
+                      },
+                      "text": "Open Purge Sequence"
+                    },
+                    "type": "ia.input.button"
+                  }
+                ],
+                "meta": {
+                  "name": "actionsCard"
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "rightPanel"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "10px",
+              "style": {
+                "flex": "1"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "mainRow"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "gap": "12px",
+          "style": {
+            "flex": "1"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

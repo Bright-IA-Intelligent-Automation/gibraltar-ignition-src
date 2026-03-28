@@ -1,0 +1,683 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#1f2937",
+                    "fontSize": "22px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Booth A Detail"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblHeaderState"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "Mode: AUTO | Recipe: 33FT_STD | Job: JOB#BR26ROB18"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "props": {
+              "alignItems": "center",
+              "justify": "space-between",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "boxShadow": "0 1px 3px rgba(0,0,0,0.12)",
+                "padding": "10px 14px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblCycleTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": "16px",
+                            "fontWeight": "700"
+                          },
+                          "text": "Cycle State"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblStep"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#111827",
+                            "fontSize": "14px"
+                          },
+                          "text": "Current Step: SPRAY PASS 3 / 6"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "lblElapsed"
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#374151",
+                                "fontSize": "13px"
+                              },
+                              "text": "Elapsed: 00:38"
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "lblTarget"
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#374151",
+                                "fontSize": "13px"
+                              },
+                              "text": "Target: 00:52"
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "lblPartPosition"
+                            },
+                            "props": {
+                              "style": {
+                                "color": "#16a34a",
+                                "fontSize": "13px",
+                                "fontWeight": "700"
+                              },
+                              "text": "Part In Position: TRUE"
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "cycleMetrics"
+                        },
+                        "props": {
+                          "gap": "20px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "cycleStateCard"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "gap": "8px",
+                      "style": {
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": "8px",
+                        "padding": "12px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblRobotTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": "16px",
+                            "fontWeight": "700"
+                          },
+                          "text": "Robot Status"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "lblR1Title"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontWeight": "700"
+                                  },
+                                  "text": "Robot 1"
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "lblR1Ready"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#16a34a",
+                                    "fontWeight": "700"
+                                  },
+                                  "text": "READY"
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "lblR1Program"
+                                },
+                                "props": {
+                                  "text": "Program: ZONE_A_03"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "robot1"
+                            },
+                            "position": {
+                              "grow": 1
+                            },
+                            "props": {
+                              "direction": "column",
+                              "style": {
+                                "backgroundColor": "#f8fafc",
+                                "borderRadius": "6px",
+                                "flex": "1",
+                                "padding": "10px"
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "lblR2Title"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontWeight": "700"
+                                  },
+                                  "text": "Robot 2"
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "lblR2Ready"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#16a34a",
+                                    "fontWeight": "700"
+                                  },
+                                  "text": "READY"
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "lblR2Program"
+                                },
+                                "props": {
+                                  "text": "Program: ZONE_A_04"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "robot2"
+                            },
+                            "position": {
+                              "grow": 1
+                            },
+                            "props": {
+                              "direction": "column",
+                              "style": {
+                                "backgroundColor": "#f8fafc",
+                                "borderRadius": "6px",
+                                "flex": "1",
+                                "padding": "10px"
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "lblR3Title"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontWeight": "700"
+                                  },
+                                  "text": "Robot 3"
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "lblR3Fault"
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": "#dc2626",
+                                    "fontWeight": "700"
+                                  },
+                                  "text": "FAULT"
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "lblR3Code"
+                                },
+                                "props": {
+                                  "text": "Code: SERVO_214"
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "robot3"
+                            },
+                            "position": {
+                              "grow": 1
+                            },
+                            "props": {
+                              "direction": "column",
+                              "style": {
+                                "backgroundColor": "#f8fafc",
+                                "borderRadius": "6px",
+                                "flex": "1",
+                                "padding": "10px"
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "robotRow"
+                        },
+                        "props": {
+                          "gap": "10px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "robotStatusCard"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "gap": "8px",
+                      "style": {
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": "8px",
+                        "padding": "12px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblPermissiveTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": "16px",
+                            "fontWeight": "700"
+                          },
+                          "text": "Interlocks and Permissives"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPermissiveLine1"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#374151",
+                            "fontSize": "13px"
+                          },
+                          "text": "Safety OK: TRUE | Paint Ready: TRUE | Air Pressure OK: TRUE | Door Closed: TRUE"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPermissiveLine2"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#374151",
+                            "fontSize": "13px"
+                          },
+                          "text": "Conveyor In Position: TRUE | Station Clear Available: FALSE"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "permissiveCard"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "gap": "6px",
+                      "style": {
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": "8px",
+                        "padding": "12px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "leftColumn"
+                },
+                "position": {
+                  "grow": 2
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "10px",
+                  "style": {
+                    "flex": "2"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblCommandsTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": "16px",
+                            "fontWeight": "700"
+                          },
+                          "text": "Booth Commands"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "btnStartCycle"
+                        },
+                        "props": {
+                          "style": {
+                            "backgroundColor": "#16a34a",
+                            "color": "#ffffff",
+                            "fontWeight": "700"
+                          },
+                          "text": "Start Cycle"
+                        },
+                        "type": "ia.input.button"
+                      },
+                      {
+                        "meta": {
+                          "name": "btnHold"
+                        },
+                        "props": {
+                          "style": {
+                            "backgroundColor": "#f59e0b",
+                            "color": "#ffffff",
+                            "fontWeight": "700"
+                          },
+                          "text": "Hold"
+                        },
+                        "type": "ia.input.button"
+                      },
+                      {
+                        "meta": {
+                          "name": "btnResume"
+                        },
+                        "props": {
+                          "style": {
+                            "backgroundColor": "#2563eb",
+                            "color": "#ffffff",
+                            "fontWeight": "700"
+                          },
+                          "text": "Resume"
+                        },
+                        "type": "ia.input.button"
+                      },
+                      {
+                        "meta": {
+                          "name": "btnStationClear"
+                        },
+                        "props": {
+                          "style": {
+                            "backgroundColor": "#334155",
+                            "color": "#ffffff",
+                            "fontWeight": "700"
+                          },
+                          "text": "Station Clear"
+                        },
+                        "type": "ia.input.button"
+                      },
+                      {
+                        "meta": {
+                          "name": "btnResetFault"
+                        },
+                        "props": {
+                          "style": {
+                            "backgroundColor": "#dc2626",
+                            "color": "#ffffff",
+                            "fontWeight": "700"
+                          },
+                          "text": "Reset Fault"
+                        },
+                        "type": "ia.input.button"
+                      }
+                    ],
+                    "meta": {
+                      "name": "commandsCard"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "gap": "8px",
+                      "style": {
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": "8px",
+                        "padding": "12px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblAlarmTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": "16px",
+                            "fontWeight": "700"
+                          },
+                          "text": "Active Alarms (Booth A)"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblAlarm1"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#dc2626",
+                            "fontSize": "13px"
+                          },
+                          "text": "1) Robot 3 Servo Fault - SERVO_214"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblAlarm2"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#b45309",
+                            "fontSize": "13px"
+                          },
+                          "text": "2) Paint Pressure Low Warning"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "alarmCard"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "gap": "6px",
+                      "style": {
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": "8px",
+                        "padding": "12px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblKpiTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": "16px",
+                            "fontWeight": "700"
+                          },
+                          "text": "Booth A Quick KPIs"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblKpiValues"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#374151",
+                            "fontSize": "13px",
+                            "marginTop": "6px"
+                          },
+                          "text": "Cycle Avg: 51s | FPY: 95.8% | Gallons/Panel: 1.84"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "kpiQuickCard"
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": "8px",
+                        "padding": "12px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "rightColumn"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "10px",
+                  "style": {
+                    "flex": "1"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "mainRow"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "gap": "12px",
+              "style": {
+                "flex": "1"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "root"
+        },
+        "props": {
+          "direction": "column",
+          "style": {
+            "backgroundColor": "#eef2f5",
+            "gap": "12px",
+            "height": "100%",
+            "padding": "14px"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

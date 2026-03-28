@@ -1,0 +1,141 @@
+{
+  "custom": {},
+  "params": {},
+  "propConfig": {
+    "params.feature": {
+      "paramDirection": "input"
+    },
+    "params.key": {
+      "paramDirection": "input"
+    },
+    "params.tier1": {
+      "paramDirection": "input"
+    },
+    "params.tier2": {
+      "paramDirection": "input"
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Left Menu - Help"
+        },
+        "position": {
+          "basis": "200px",
+          "shrink": 0
+        },
+        "props": {
+          "path": "Exchange/BasePack/Nav/Sidemenu/Left Menu - Help"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Title"
+            },
+            "position": {
+              "basis": "56px",
+              "shrink": 0
+            },
+            "props": {
+              "params": {
+                "icon": "help",
+                "text": "Help"
+              },
+              "path": "Exchange/BasePack/Nav/Example Pages/Embedded/Title"
+            },
+            "type": "ia.display.view"
+          },
+          {
+            "meta": {
+              "hasDelegate": true,
+              "name": "Spacer_1"
+            },
+            "position": {
+              "basis": "12px",
+              "shrink": 0
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "hasDelegate": true,
+              "name": "Welcome"
+            },
+            "position": {
+              "basis": "20px",
+              "shrink": 0
+            },
+            "props": {
+              "style": {
+                "marginLeft": 15
+              },
+              "text": "Welcome!"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "hasDelegate": true,
+              "name": "Spacer_2"
+            },
+            "position": {
+              "basis": "10px",
+              "shrink": 0
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "hasDelegate": true,
+              "name": "Description"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "props": {
+              "style": {
+                "marginLeft": 15
+              },
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis justo, tempus a sapien ut, gravida vulputate nulla. Aenean sed commodo libero. Mauris eleifend, turpis a porta accumsan, neque risus bibendum lectus, a luctus augue purus at arcu. Pellentesque vel mauris eget mauris tempus molestie. Nulla bibendum dignissim ipsum ac sagittis. Sed elementum vulputate nunc, eu mattis purus. Quisque eget sodales sapien. Vestibulum maximus vulputate tortor, in pharetra ipsum malesuada sit amet. Nullam blandit lacus ac tellus suscipit, sed dictum ex porttitor. Cras ultrices vulputate urna non eleifend. Morbi vel aliquam turpis, eu finibus diam. Cras commodo mattis est a facilisis. Praesent maximus mauris eget ante tempus pharetra. "
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "hasDelegate": true,
+              "name": "Spacer_3"
+            },
+            "position": {
+              "basis": "10px",
+              "shrink": 0
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "200px",
+          "grow": 1
+        },
+        "props": {
+          "direction": "column",
+          "style": {
+            "classes": "page"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.flex"
+  }
+}

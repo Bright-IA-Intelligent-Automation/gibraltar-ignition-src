@@ -1,0 +1,823 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "lblTitle"
+            },
+            "props": {
+              "style": {
+                "color": "#1f2937",
+                "fontSize": "22px",
+                "fontWeight": "700"
+              },
+              "text": "Recipe and Job Management"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "lblHeaderInfo"
+            },
+            "props": {
+              "style": {
+                "color": "#4b5563",
+                "fontSize": "13px"
+              },
+              "text": "Current Job: JOB#BR26ROB18 | User: Supervisor01 | Mode: AUTO"
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "space-between",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "borderRadius": "8px",
+            "boxShadow": "0 1px 3px rgba(0,0,0,0.12)",
+            "padding": "10px 14px"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblActiveRecipeTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Active Recipe"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblActiveRecipeValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "33FT_STD"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblActiveRecipeRev"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Rev 12"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileActiveRecipe"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblDlTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Download Status"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblDlValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#16a34a",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "SUCCESS"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblDlNote"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "PLC + Robots synchronized"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileDownloadStatus"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblSetTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Parameter Set"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblSetValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "PSET-04"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblSetNote"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Applied to Booth A/B"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileParameterSet"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblAuditTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Audit State"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblAuditValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#2563eb",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "LOGGING"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblAuditNote"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Last change: 14:58:21"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileAuditState"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "kpiRow"
+        },
+        "props": {
+          "gap": "10px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblLibraryTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Recipe Library"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblRecipe1"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "13px"
+                  },
+                  "text": "33FT_STD (Rev 12) [ACTIVE]"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblRecipe2"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "32FT_STD (Rev 9)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblRecipe3"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "34FT_STD (Rev 7)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblRecipe4"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "35FT_SLOPE (Rev 2)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "btnLoadRecipe"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2563eb",
+                    "color": "#ffffff",
+                    "fontWeight": "700",
+                    "marginTop": "8px"
+                  },
+                  "text": "Load Selected Recipe"
+                },
+                "type": "ia.input.button"
+              }
+            ],
+            "meta": {
+              "name": "recipeListCard"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblDetailTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Recipe Detail - 33FT_STD"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblGeneralTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "fontWeight": "700"
+                          },
+                          "text": "General"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblGen1"
+                        },
+                        "props": {
+                          "text": "Panel Type: 33 ft"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblGen2"
+                        },
+                        "props": {
+                          "text": "Target Mil: 11"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblGen3"
+                        },
+                        "props": {
+                          "text": "Cycle Target: 55 sec"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "colGeneral"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "props": {
+                      "direction": "column",
+                      "gap": "6px",
+                      "style": {
+                        "backgroundColor": "#f8fafc",
+                        "borderRadius": "6px",
+                        "flex": "1",
+                        "padding": "10px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblPaintTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "fontWeight": "700"
+                          },
+                          "text": "Paint Parameters"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPaint1"
+                        },
+                        "props": {
+                          "text": "A Flow Setpoint: 1.25 gpm"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPaint2"
+                        },
+                        "props": {
+                          "text": "B Flow Setpoint: 1.25 gpm"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPaint3"
+                        },
+                        "props": {
+                          "text": "Ratio Tolerance: +/-3.0%"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "colPaint"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "props": {
+                      "direction": "column",
+                      "gap": "6px",
+                      "style": {
+                        "backgroundColor": "#f8fafc",
+                        "borderRadius": "6px",
+                        "flex": "1",
+                        "padding": "10px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblOffsetTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "fontWeight": "700"
+                          },
+                          "text": "Robot Offsets"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblOffset1"
+                        },
+                        "props": {
+                          "text": "R1 Offset: +2.5 mm"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblOffset2"
+                        },
+                        "props": {
+                          "text": "R2 Offset: +1.8 mm"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblOffset3"
+                        },
+                        "props": {
+                          "text": "R3 Offset: +2.1 mm"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "colOffsets"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "props": {
+                      "direction": "column",
+                      "gap": "6px",
+                      "style": {
+                        "backgroundColor": "#f8fafc",
+                        "borderRadius": "6px",
+                        "flex": "1",
+                        "padding": "10px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "detailColumns"
+                },
+                "props": {
+                  "gap": "12px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "recipeDetailCard"
+            },
+            "position": {
+              "grow": 2
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "2",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "mainRow"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "gap": "12px",
+          "style": {
+            "flex": "1"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblRevTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Revision and Change History"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblRev1"
+                },
+                "props": {
+                  "text": "Rev 12 | 2026-03-24 14:58 | Supervisor01 | Updated R2 offset"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblRev2"
+                },
+                "props": {
+                  "text": "Rev 11 | 2026-03-20 09:10 | Engineer02 | Ratio tolerance adjusted"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblRev3"
+                },
+                "props": {
+                  "text": "Rev 10 | 2026-03-18 16:02 | Engineer01 | Cycle target update"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "revisionHistoryCard"
+            },
+            "position": {
+              "grow": 2
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "2",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblActionsTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Recipe Actions"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "btnNewRev"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2563eb",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Create New Revision"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "btnValidate"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#334155",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Validate Parameters"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "btnDownload"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#16a34a",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Download to PLC and Robots"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "btnRevert"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#b45309",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Revert to Previous Revision"
+                },
+                "type": "ia.input.button"
+              }
+            ],
+            "meta": {
+              "name": "actionsCard"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "bottomRow"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "gap": "12px",
+          "style": {
+            "flex": "1"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Tank"
+        },
+        "position": {
+          "height": 263,
+          "width": 181,
+          "x": 40,
+          "y": 303
+        },
+        "props": {
+          "params": {
+            "Alarm": {
+              "isActive": false
+            },
+            "Label": {
+              "showTag": false,
+              "tag": "00-98",
+              "text": "Tank 1"
+            },
+            "PV": {
+              "decimals": 0,
+              "eu": "m3",
+              "isPercent": false,
+              "max": 10000,
+              "min": 0,
+              "roc": 5,
+              "value": 9100
+            },
+            "Size": "large"
+          },
+          "path": "Exchange/BasePack/Nav/Example Pages/P\u0026ID/Embedded/Tank"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Tank_0"
+        },
+        "position": {
+          "height": 263,
+          "width": 181,
+          "x": 303,
+          "y": 303
+        },
+        "props": {
+          "params": {
+            "Alarm": {
+              "isActive": false
+            },
+            "Label": {
+              "showTag": false,
+              "tag": "00-98",
+              "text": "Tank 2 "
+            },
+            "PV": {
+              "decimals": 0,
+              "eu": "m3",
+              "isPercent": false,
+              "max": 10000,
+              "min": 0,
+              "roc": -5,
+              "value": 2100
+            },
+            "Size": "large"
+          },
+          "path": "Exchange/BasePack/Nav/Example Pages/P\u0026ID/Embedded/Tank"
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "pipes": [
+        {
+          "appearance": "simple",
+          "end": "none",
+          "fill": "",
+          "flanges": false,
+          "lineVariant": "solid",
+          "name": "pipe",
+          "origin": {
+            "connections": [
+              {
+                "x": 128.5,
+                "y": 307
+              },
+              {
+                "connections": [
+                  {
+                    "x": 391.5,
+                    "y": 307
+                  }
+                ],
+                "x": 391.5,
+                "y": 147
+              }
+            ],
+            "x": 128.5,
+            "y": 147
+          },
+          "start": "none",
+          "stroke": "",
+          "visible": true,
+          "width": 10
+        }
+      ]
+    },
+    "type": "ia.container.coord"
+  }
+}

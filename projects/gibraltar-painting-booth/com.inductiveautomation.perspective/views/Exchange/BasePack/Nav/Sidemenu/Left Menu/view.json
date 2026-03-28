@@ -1,0 +1,410 @@
+{
+  "custom": {
+    "size": "small"
+  },
+  "params": {},
+  "propConfig": {
+    "custom.size": {
+      "binding": {
+        "config": {
+          "path": "page.props.dimensions.viewport.width"
+        },
+        "transforms": [
+          {
+            "fallback": "large",
+            "inputType": "range",
+            "mappings": [
+              {
+                "input": {
+                  "max": 1000,
+                  "min": 0
+                },
+                "output": "small"
+              }
+            ],
+            "outputType": "scalar",
+            "type": "map"
+          },
+          {
+            "expression": "if({session.props.device.type}\u003d\u0027designer\u0027,\"small\",{value})",
+            "type": "expression"
+          }
+        ],
+        "type": "property"
+      },
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "width": 269
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Home"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "props": {
+          "params": {
+            "icon": "material/home",
+            "isLink": true,
+            "label": "Home",
+            "showArrow": false,
+            "target": "/"
+          },
+          "path": "Exchange/BasePack/Nav/Sidemenu/Embedded/Link"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "CoatingOperations"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "props": {
+          "params": {
+            "hasSeparator": true,
+            "icon": "material/notes",
+            "items": [
+              {
+                "icon": "material/dashboard",
+                "instancePosition": {},
+                "instanceStyle": {
+                  "classes": "",
+                  "color": ""
+                },
+                "label": "Manegement Overview",
+                "target": "/coating/overview"
+              },
+              {
+                "icon": "material/view_week",
+                "instancePosition": {},
+                "instanceStyle": {
+                  "classes": "",
+                  "color": ""
+                },
+                "label": "Booth Detail",
+                "target": "/coating/booth-detail"
+              },
+              {
+                "icon": "material/format_paint",
+                "instancePosition": {},
+                "instanceStyle": {
+                  "classes": "",
+                  "color": ""
+                },
+                "label": "Paint System Detail",
+                "target": "/coating/paint-system"
+              },
+              {
+                "icon": "material/sync_alt",
+                "instancePosition": {},
+                "instanceStyle": {
+                  "classes": "",
+                  "color": ""
+                },
+                "label": "Part Flow and Handshake",
+                "target": "/coating/part-flow"
+              },
+              {
+                "icon": "material/account_tree",
+                "instancePosition": {},
+                "instanceStyle": {
+                  "classes": "",
+                  "color": ""
+                },
+                "label": "Safety and Interlocks",
+                "target": "/coating/safety-interlocks"
+              },
+              {
+                "icon": "material/tune",
+                "instancePosition": {},
+                "instanceStyle": {
+                  "classes": "",
+                  "color": ""
+                },
+                "label": "Recipe and Job Management",
+                "target": "/coating/recipes"
+              }
+            ],
+            "label": "Coating Operations",
+            "target": ""
+          },
+          "path": "Exchange/BasePack/Nav/Sidemenu/Embedded/Section"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Analytics"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "props": {
+          "params": {
+            "hasSeparator": true,
+            "icon": "material/analytics",
+            "items": [
+              {
+                "icon": "material/analytics",
+                "instancePosition": {},
+                "instanceStyle": {
+                  "classes": "",
+                  "color": ""
+                },
+                "label": "KPI Command Center",
+                "target": "/analytics/kpi-command-center"
+              },
+              {
+                "icon": "material/timeline",
+                "instancePosition": {},
+                "instanceStyle": {
+                  "classes": "",
+                  "color": ""
+                },
+                "label": "Downtime Analysis",
+                "target": "/analytics/downtime-analysis"
+              },
+              {
+                "icon": "material/description",
+                "instancePosition": {},
+                "instanceStyle": {
+                  "classes": "",
+                  "color": ""
+                },
+                "label": "Reports",
+                "target": "/report-viewer"
+              }
+            ],
+            "label": "Analytics",
+            "target": ""
+          },
+          "path": "Exchange/BasePack/Nav/Sidemenu/Embedded/Section"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Alarms"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "propConfig": {
+              "position.display": {
+                "binding": {
+                  "config": {
+                    "expression": "{view.custom.size} !\u003d \"large\""
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "params": {
+                "iconOnly": false
+              },
+              "path": "Exchange/BasePack/Nav/Embedded/Alarms",
+              "style": {
+                "classes": "nav-link"
+              }
+            },
+            "type": "ia.display.view"
+          },
+          {
+            "meta": {
+              "name": "Theme"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "propConfig": {
+              "position.display": {
+                "binding": {
+                  "config": {
+                    "expression": "{view.custom.size} !\u003d \"large\""
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "loading": {
+                "order": "with-parent"
+              },
+              "params": {
+                "isLink": false
+              },
+              "path": "Exchange/BasePack/Nav/Embedded/Theme",
+              "style": {
+                "classes": "nav-link"
+              }
+            },
+            "type": "ia.display.view"
+          },
+          {
+            "meta": {
+              "name": "Time"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "propConfig": {
+              "position.display": {
+                "binding": {
+                  "config": {
+                    "expression": "{view.custom.size} !\u003d \"large\""
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "path": "Exchange/BasePack/Nav/Embedded/Time",
+              "style": {
+                "classes": "nav-not-a-link"
+              }
+            },
+            "type": "ia.display.view"
+          },
+          {
+            "meta": {
+              "name": "User"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "propConfig": {
+              "position.display": {
+                "binding": {
+                  "config": {
+                    "expression": "{view.custom.size} !\u003d \"large\""
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "path": "Exchange/BasePack/Nav/Embedded/User",
+              "style": {
+                "classes": "nav-link"
+              }
+            },
+            "type": "ia.display.view"
+          },
+          {
+            "meta": {
+              "name": "Help"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "props": {
+              "params": {
+                "hasSeparator": true,
+                "icon": "material/help",
+                "items": [],
+                "label": "Help",
+                "target": "/help"
+              },
+              "path": "Exchange/BasePack/Nav/Sidemenu/Embedded/Section"
+            },
+            "type": "ia.display.view"
+          },
+          {
+            "meta": {
+              "name": "Settings"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "props": {
+              "params": {
+                "hasSeparator": false,
+                "icon": "material/settings",
+                "items": [
+                  {
+                    "icon": "material/tune",
+                    "instancePosition": {},
+                    "instanceStyle": {
+                      "classes": "",
+                      "color": ""
+                    },
+                    "label": "General",
+                    "target": "/settings/general"
+                  },
+                  {
+                    "icon": "material/notifications",
+                    "instancePosition": {},
+                    "instanceStyle": {
+                      "classes": "",
+                      "color": ""
+                    },
+                    "label": "Toast",
+                    "target": "/settings/toast"
+                  }
+                ],
+                "label": "Settings",
+                "target": ""
+              },
+              "path": "Exchange/BasePack/Nav/Sidemenu/Embedded/Section"
+            },
+            "type": "ia.display.view"
+          }
+        ],
+        "meta": {
+          "name": "Util"
+        },
+        "position": {
+          "basis": "200px",
+          "grow": 1
+        },
+        "props": {
+          "direction": "column",
+          "justify": "flex-end"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "Icon"
+        },
+        "position": {
+          "basis": "30px"
+        },
+        "props": {
+          "path": "material/account_tree"
+        },
+        "type": "ia.display.icon"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "propConfig": {
+      "props.style.classes": {
+        "binding": {
+          "config": {
+            "expression": "if({session.props.device.type}\u003d\u0027designer\u0027,\r\n\u0027nav nav-open \u0027,\r\nif({session.custom.navigation.sideMenu.leftOpen},\r\n\u0027nav nav-open \u0027,\r\n\u0027nav \u0027))"
+          },
+          "type": "expr"
+        }
+      }
+    },
+    "props": {
+      "direction": "column",
+      "style": {}
+    },
+    "type": "ia.container.flex"
+  }
+}

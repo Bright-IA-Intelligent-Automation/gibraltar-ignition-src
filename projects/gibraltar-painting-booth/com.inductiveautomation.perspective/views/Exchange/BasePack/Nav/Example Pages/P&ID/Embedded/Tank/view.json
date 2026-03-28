@@ -1,0 +1,360 @@
+{
+  "custom": {
+    "label": "Tank",
+    "pvMinMaxEu": "9200 / 10000 m3",
+    "pvPercent": "92 %",
+    "pvRoC": "",
+    "pvValue": 9200
+  },
+  "params": {
+    "Alarm": {
+      "isActive": false
+    },
+    "Label": {
+      "showTag": false,
+      "tag": "00-98",
+      "text": "Tank"
+    },
+    "PV": {
+      "decimals": 0,
+      "eu": "m3",
+      "isPercent": false,
+      "max": 10000,
+      "min": 0,
+      "roc": 0,
+      "value": 9200
+    },
+    "Size": "large"
+  },
+  "propConfig": {
+    "custom.label": {
+      "binding": {
+        "config": {
+          "path": "view.params.Label.showTag"
+        },
+        "transforms": [
+          {
+            "expression": "if({value}\r\n,{view.params.Label.tag}\r\n,{view.params.Label.text})",
+            "type": "expression"
+          }
+        ],
+        "type": "property"
+      },
+      "persistent": true
+    },
+    "custom.pvMinMaxEu": {
+      "binding": {
+        "config": {
+          "expression": "{view.custom.pvValue} + \" / \" + {view.params.PV.max}  + \" \" + {view.params.PV.eu}"
+        },
+        "type": "expr"
+      },
+      "persistent": true
+    },
+    "custom.pvPercent": {
+      "binding": {
+        "config": {
+          "expression": "if({view.params.PV.isPercent}\r\n,{view.params.PV.value}\r\n,{view.params.PV.value}*100/{view.params.PV.max})"
+        },
+        "transforms": [
+          {
+            "expression": "case({view.params.PV.decimals},\r\n\t1, numberFormat({value},\"##.0\"),\r\n\t2, numberFormat({value},\"##.00\"),\r\n\t3, numberFormat({value},\"##.000\"),\r\n\t4, numberFormat({value},\"##.0000\"),\r\n\tround({value})\r\n) + \" %\"",
+            "type": "expression"
+          }
+        ],
+        "type": "expr"
+      },
+      "persistent": true
+    },
+    "custom.pvRoC": {
+      "binding": {
+        "config": {
+          "path": "view.params.PV.roc"
+        },
+        "transforms": [
+          {
+            "fallback": "",
+            "inputType": "range",
+            "mappings": [
+              {
+                "input": {
+                  "max": 999,
+                  "min": 1
+                },
+                "output": "material/keyboard_arrow_up"
+              },
+              {
+                "input": {
+                  "max": -1,
+                  "min": -999
+                },
+                "output": "material/keyboard_arrow_down"
+              }
+            ],
+            "outputType": "scalar",
+            "type": "map"
+          }
+        ],
+        "type": "property"
+      },
+      "persistent": true
+    },
+    "custom.pvValue": {
+      "binding": {
+        "config": {
+          "expression": "if({view.params.PV.isPercent}\r\n,{view.params.PV.value}/100*{view.params.PV.max}\r\n,{view.params.PV.value})"
+        },
+        "transforms": [
+          {
+            "expression": "case({view.params.PV.decimals},\r\n\t1, numberFormat({value},\"##.0\"),\r\n\t2, numberFormat({value},\"##.00\"),\r\n\t3, numberFormat({value},\"##.000\"),\r\n\t4, numberFormat({value},\"##.0000\"),\r\n\t{value}\r\n)",
+            "type": "expression"
+          }
+        ],
+        "type": "expr"
+      },
+      "persistent": true
+    },
+    "params.Alarm": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.Label": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.PV": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.Size": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Badges"
+        },
+        "position": {
+          "basis": "200px",
+          "display": false
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Icon"
+                    },
+                    "position": {
+                      "basis": "30px",
+                      "shrink": 0
+                    },
+                    "propConfig": {
+                      "props.path": {
+                        "binding": {
+                          "config": {
+                            "path": "view.custom.pvRoC"
+                          },
+                          "type": "property"
+                        }
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  },
+                  {
+                    "meta": {
+                      "name": "PercentPV"
+                    },
+                    "position": {
+                      "shrink": 0
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "path": "view.custom.pvPercent"
+                          },
+                          "type": "property"
+                        }
+                      }
+                    },
+                    "props": {
+                      "textStyle": {
+                        "fontSize": "30px",
+                        "fontWeight": "bolder"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "Top"
+                },
+                "props": {
+                  "justify": "space-between"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "Divider"
+                },
+                "position": {
+                  "shrink": 0
+                },
+                "props": {
+                  "style": {
+                    "classes": "nav-section-separator "
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "PV"
+                    },
+                    "position": {
+                      "basis": "32px"
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "path": "view.custom.pvMinMaxEu"
+                          },
+                          "type": "property"
+                        }
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "Bottom"
+                },
+                "props": {
+                  "alignItems": "flex-end",
+                  "direction": "column",
+                  "justify": "flex-end"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "Labels"
+            },
+            "props": {
+              "direction": "column"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Vessel"
+            },
+            "position": {
+              "grow": 1
+            },
+            "propConfig": {
+              "props.value.capacity": {
+                "binding": {
+                  "config": {
+                    "path": "view.params.PV.max"
+                  },
+                  "type": "property"
+                }
+              },
+              "props.value.value": {
+                "binding": {
+                  "config": {
+                    "path": "view.custom.pvValue"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "appearance": "simple",
+              "displayAgitator": false,
+              "displayStand": false,
+              "label": {
+                "location": "hidden"
+              },
+              "liquidColor": "var(--primary)",
+              "liquidOpacity": 0.2,
+              "value": {
+                "displayValueAsPercent": false,
+                "location": "hidden"
+              }
+            },
+            "type": "ia.symbol.vessel"
+          }
+        ],
+        "meta": {
+          "name": "Body"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "direction": "column",
+          "style": {
+            "borderColor": "var(--shadow)",
+            "borderStyle": "solid",
+            "borderWidth": "1px",
+            "classes": "nav-link"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "50px"
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "path": "view.custom.label"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "Label"
+        },
+        "props": {
+          "justify": "center"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

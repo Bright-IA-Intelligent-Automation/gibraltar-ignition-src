@@ -1,0 +1,51 @@
+{
+  "pages": {
+    "/": {
+      "title": "",
+      "viewPath": "Pages/Overview"
+    },
+    "/analytics/:page": {
+      "title": "",
+      "viewPath": "Pages/AnalysticsNavigation"
+    },
+    "/coating/:page": {
+      "title": "",
+      "viewPath": "Pages/CoatingNavigation"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom",
+    "left": [
+      {
+        "anchor": "fixed",
+        "autoBreakpoint": 480,
+        "content": "push",
+        "handle": "hide",
+        "iconUrl": "",
+        "id": "",
+        "modal": false,
+        "resizable": false,
+        "show": "visible",
+        "size": 150,
+        "viewParams": {},
+        "viewPath": "Exchange/BasePack/Nav/Sidemenu/Left Menu"
+      }
+    ],
+    "top": [
+      {
+        "anchor": "fixed",
+        "autoBreakpoint": 480,
+        "content": "auto",
+        "handle": "hide",
+        "iconUrl": "",
+        "id": "",
+        "modal": false,
+        "resizable": false,
+        "show": "visible",
+        "size": 55,
+        "viewParams": {},
+        "viewPath": "Exchange/BasePack/Nav/Header/Header"
+      }
+    ]
+  }
+}

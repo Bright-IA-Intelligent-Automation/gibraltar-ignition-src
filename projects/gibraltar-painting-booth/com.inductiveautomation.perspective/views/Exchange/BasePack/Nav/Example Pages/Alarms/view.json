@@ -1,0 +1,579 @@
+{
+  "custom": {},
+  "params": {},
+  "propConfig": {
+    "params.feature": {
+      "paramDirection": "input"
+    },
+    "params.key": {
+      "paramDirection": "input"
+    },
+    "params.tier1": {
+      "paramDirection": "input"
+    },
+    "params.tier2": {
+      "paramDirection": "input"
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Title"
+        },
+        "position": {
+          "basis": "56px",
+          "shrink": 0
+        },
+        "props": {
+          "params": {
+            "icon": "alarm",
+            "text": "Alarms"
+          },
+          "path": "Exchange/BasePack/Nav/Example Pages/Embedded/Title"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "AlarmStatusTable"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "columns": {
+            "active": {
+              "activeTime": {
+                "strictWidth": true,
+                "width": 140
+              },
+              "displayPath": {
+                "enabled": false
+              },
+              "label": {
+                "enabled": true,
+                "order": 1
+              },
+              "name": {
+                "enabled": false
+              },
+              "priority": {
+                "strictWidth": true,
+                "width": 90
+              },
+              "source": {
+                "enabled": false
+              },
+              "state": {
+                "strictWidth": true,
+                "width": 200
+              }
+            }
+          },
+          "dateFormat": "DD-MMM-YY HH:mm:ss",
+          "dragOrderable": false,
+          "filters": {
+            "active": {
+              "results": {
+                "data": [
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:27:50.923-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "Ignition_COE_Dev/Critical_Alarm_Notification",
+                    "activeTime": "2025-08-20 04:52:04.061-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Inlet Air Temperature Exceeds High Limit",
+                    "eventId": "4ac16455-9dbe-4293-a5e7-040f16988dda",
+                    "eventTime": "2025-11-26 03:27:50.923-0800",
+                    "eventValue": "78",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "en-us",
+                    "name": "Inlet Air Temprature",
+                    "notes": "",
+                    "priority": "critical",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Inlet Air Temperature Exceeds High Limit:/alm:Inlet Air Temprature",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:27:50.923-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "Ignition_COE_Dev/Critical_Alarm_Notification",
+                    "activeTime": "2025-08-20 04:52:04.066-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Exhaust Temperature Below Low Limit",
+                    "eventId": "4412d7c4-580d-4747-8730-16864ef98e6f",
+                    "eventTime": "2025-11-26 03:27:50.923-0800",
+                    "eventValue": "10",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "en-us",
+                    "name": "Exhaust Temperature",
+                    "notes": "",
+                    "priority": "critical",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Exhaust Temperature Below Low Limit:/alm:Exhaust Temperature",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:27:50.923-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "Ignition_COE_Dev/Critical_Alarm_Notification",
+                    "activeTime": "2025-08-20 04:52:04.065-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Power Consumption Exceeds Threshold",
+                    "eventId": "63616c3f-fdd1-416a-9434-f5b5ae1509e1",
+                    "eventTime": "2025-11-26 03:27:50.923-0800",
+                    "eventValue": "78",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "en-us",
+                    "name": "Power Consumption",
+                    "notes": "",
+                    "priority": "critical",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Power Consumption Exceeds Threshold:/alm:Power Consumption",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:28:01.616-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "Ignition_COE_Dev/Critical_Alarm_Notification",
+                    "activeTime": "2025-08-20 04:52:04.064-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Voltage Fluctuation Beyond Tolerance",
+                    "eventId": "5e65c19b-bb80-49cd-936a-b40802d84935",
+                    "eventTime": "2025-11-26 03:28:01.616-0800",
+                    "eventValue": "90",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "en-us",
+                    "name": "Voltage Fluctuation Tolerance",
+                    "notes": "",
+                    "priority": "critical",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Voltage Fluctuation Beyond Tolerance:/alm:Voltage Fluctuation Tolerance",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:51:55.423-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.096-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_2/Main_Alarm/Alarm",
+                    "eventId": "c8f2003e-49ca-4c7e-afaf-76c7c27d06cb",
+                    "eventTime": "2025-11-26 03:51:55.423-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "alarm",
+                    "name": "alarm",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_2/Main_Alarm:/alm:Alarm",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 02:16:50.174-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.116-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_4/Main_Alarm/Alarm 2",
+                    "eventId": "ff6035f9-add4-4dd9-9fce-b2c60db86bb3",
+                    "eventTime": "2025-11-26 02:16:50.174-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 2",
+                    "name": "Alarm 2",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_4/Main_Alarm:/alm:Alarm 2",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 02:16:50.174-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.115-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_4/Main_Alarm/Alarm 1",
+                    "eventId": "323cef5f-30f0-45e4-8756-3c116a7302da",
+                    "eventTime": "2025-11-26 02:16:50.174-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 1",
+                    "name": "Alarm 1",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_4/Main_Alarm:/alm:Alarm 1",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 02:16:50.174-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.115-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_4/Main_Alarm/Alarm 6",
+                    "eventId": "fbc867c5-59a5-40b4-80ba-b5694038daa7",
+                    "eventTime": "2025-11-26 02:16:50.174-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 6",
+                    "name": "Alarm 6",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_4/Main_Alarm:/alm:Alarm 6",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 02:16:50.174-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.114-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_4/Main_Alarm/Alarm 5",
+                    "eventId": "19bd06c1-fc01-447c-ae93-d5040de6beb6",
+                    "eventTime": "2025-11-26 02:16:50.174-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 5",
+                    "name": "Alarm 5",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_4/Main_Alarm:/alm:Alarm 5",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 02:16:50.174-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.114-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_4/Main_Alarm/Alarm 4",
+                    "eventId": "f19e437e-e2d7-4652-a208-7eda4d86a736",
+                    "eventTime": "2025-11-26 02:16:50.174-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 4",
+                    "name": "Alarm 4",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_4/Main_Alarm:/alm:Alarm 4",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:27:50.923-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.114-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_4/Main_Alarm/Alarm 3",
+                    "eventId": "816e11c2-8fc1-4c3f-ac1f-11cb703f3686",
+                    "eventTime": "2025-11-26 03:27:50.923-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 3",
+                    "name": "Alarm 3",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_4/Main_Alarm:/alm:Alarm 3",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:51:55.423-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.113-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_4/Main_Alarm/Alarm",
+                    "eventId": "added7fc-420a-489e-8582-fcbf7416f2a5",
+                    "eventTime": "2025-11-26 03:51:55.423-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "alarm",
+                    "name": "alarm",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_4/Main_Alarm:/alm:Alarm",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:27:50.923-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.099-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_2/Main_Alarm/Alarm 2",
+                    "eventId": "20f9953e-d4b8-4d2c-a87f-d78c60abb2d1",
+                    "eventTime": "2025-11-26 03:27:50.923-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 2",
+                    "name": "Alarm 2",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_2/Main_Alarm:/alm:Alarm 2",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:51:55.423-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.098-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_2/Main_Alarm/Alarm 1",
+                    "eventId": "64f210de-51ad-4db0-8636-bf3f128a3660",
+                    "eventTime": "2025-11-26 03:51:55.423-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 1",
+                    "name": "Alarm 1",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_2/Main_Alarm:/alm:Alarm 1",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:51:55.423-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.098-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_2/Main_Alarm/Alarm 6",
+                    "eventId": "6fd64568-aeab-43cf-99b5-c72b13122677",
+                    "eventTime": "2025-11-26 03:51:55.423-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 6",
+                    "name": "Alarm 6",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_2/Main_Alarm:/alm:Alarm 6",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:51:55.423-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.098-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_2/Main_Alarm/Alarm 5",
+                    "eventId": "96a2d220-9cf9-48f4-922a-c5d4dca87fcb",
+                    "eventTime": "2025-11-26 03:51:55.423-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 5",
+                    "name": "Alarm 5",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_2/Main_Alarm:/alm:Alarm 5",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:51:55.423-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.097-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_2/Main_Alarm/Alarm 4",
+                    "eventId": "202d7d7d-3274-4d40-ac8e-e6b4609a556d",
+                    "eventTime": "2025-11-26 03:51:55.423-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 4",
+                    "name": "Alarm 4",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_2/Main_Alarm:/alm:Alarm 4",
+                    "state": "Active, Acknowledged"
+                  },
+                  {
+                    "ackNotes": "",
+                    "ackPipeline": "",
+                    "ackTime": "2025-11-26 03:27:50.923-0800",
+                    "ackUser": "Vignesh Vignesh S",
+                    "activePipeline": "",
+                    "activeTime": "2025-08-20 04:52:04.097-0700",
+                    "clearPipeline": "",
+                    "clearTime": "",
+                    "deadband": "0.0",
+                    "displayPath": "Alarm/Alarm_2/Main_Alarm/Alarm 3",
+                    "eventId": "9b5413ae-69a0-4957-950b-02a00ba9aa24",
+                    "eventTime": "2025-11-26 03:27:50.923-0800",
+                    "eventValue": "127",
+                    "isAcked": "true",
+                    "isActive": "true",
+                    "isClear": "false",
+                    "label": "Alarm 3",
+                    "name": "Alarm 3",
+                    "notes": "",
+                    "priority": "low",
+                    "source": "prov:RenuSoft_PLC:/tag:Alarm/Alarm_2/Main_Alarm:/alm:Alarm 3",
+                    "state": "Active, Acknowledged"
+                  }
+                ],
+                "enabled": true
+              },
+              "states": {
+                "clearUnacked": false
+              }
+            }
+          },
+          "pager": {
+            "enabled": false
+          },
+          "responsive": {
+            "breakpoint": 250,
+            "enabled": true
+          },
+          "rowStyles": {
+            "activeAcked": {
+              "base": {
+                "borderTopLeftRadius": "var(--border-radius,4px)"
+              }
+            },
+            "activeUnacked": {
+              "base": {
+                "borderBottomLeftRadius": "var(--border-radius,4px)",
+                "borderBottomRightRadius": "var(--border-radius,4px)",
+                "borderTopLeftRadius": "var(--border-radius,4px)",
+                "borderTopRightRadius": "var(--border-radius,4px)",
+                "color": "#FFFFFF"
+              },
+              "priorities": {
+                "critical": {
+                  "backgroundColor": "var(--alarm-urgent, #e76f51)"
+                },
+                "diagnostic": {
+                  "backgroundColor": "var(--callToAction--disabled)"
+                },
+                "high": {
+                  "backgroundColor": "var(--alarm-high, #f4a261)"
+                },
+                "low": {
+                  "backgroundColor": "var(--alarm-low, #2a9d8f)"
+                },
+                "medium": {
+                  "backgroundColor": "var(--alarm-medium, #e9c46a)"
+                }
+              }
+            }
+          },
+          "style": {
+            "borderStyle": "none"
+          }
+        },
+        "type": "ia.display.alarmstatustable"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "page"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

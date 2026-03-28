@@ -1,0 +1,1166 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "root"
+        },
+        "props": {
+          "direction": "column"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "lblTitle"
+            },
+            "props": {
+              "style": {
+                "color": "#1f2937",
+                "fontSize": "22px",
+                "fontWeight": "700"
+              },
+              "text": "Downtime Analysis"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "lblContext"
+            },
+            "props": {
+              "style": {
+                "color": "#4b5563",
+                "fontSize": "13px"
+              },
+              "text": "Window: Current Shift | Booth: All | Job: JOB#BR26ROB18"
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "space-between",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "borderRadius": "8px",
+            "boxShadow": "0 1px 3px rgba(0,0,0,0.12)",
+            "padding": "10px 14px"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblTotalDTTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Total Downtime"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblTotalDTValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "54 min"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblTotalDTTarget"
+                },
+                "props": {
+                  "style": {
+                    "color": "#dc2626",
+                    "fontSize": "12px"
+                  },
+                  "text": "Target \u003c\u003d 40 min"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileTotalDowntime"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblEventsTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Downtime Events"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblEventsValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "12"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblEventsAvg"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Avg/event: 4.5 min"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileEvents"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblMTTRTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "MTTR (Critical)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblMTTRValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "6.4 min"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblMTTRCompare"
+                },
+                "props": {
+                  "style": {
+                    "color": "#b45309",
+                    "fontSize": "12px"
+                  },
+                  "text": "Last shift: 5.1 min"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileMTTR"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblAvailTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Availability Loss"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblAvailValue"
+                },
+                "props": {
+                  "style": {
+                    "color": "#111827",
+                    "fontSize": "30px",
+                    "fontWeight": "800"
+                  },
+                  "text": "8.2%"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblAvailTarget"
+                },
+                "props": {
+                  "style": {
+                    "color": "#dc2626",
+                    "fontSize": "12px"
+                  },
+                  "text": "Target \u003c\u003d 6.0%"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "tileAvailabilityLoss"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "kpiRow"
+        },
+        "props": {
+          "gap": "10px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblParetoTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Downtime Pareto by Cause"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblParetoHint"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Use Time Series / XY Chart here for cause minutes and cumulative percentage."
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "paretoChart"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "dataSources": {
+                    "pareto": [
+                      {
+                        "cause": "Robot Faults",
+                        "cumulative": 35,
+                        "minutes": 19
+                      },
+                      {
+                        "cause": "Paint Ready False",
+                        "cumulative": 61,
+                        "minutes": 14
+                      },
+                      {
+                        "cause": "Conveyor Wait",
+                        "cumulative": 81,
+                        "minutes": 11
+                      },
+                      {
+                        "cause": "Safety Reset",
+                        "cumulative": 92,
+                        "minutes": 6
+                      },
+                      {
+                        "cause": "Operator Delay",
+                        "cumulative": 100,
+                        "minutes": 4
+                      }
+                    ]
+                  },
+                  "series": [
+                    {
+                      "candlestick": {
+                        "appearance": {
+                          "deriveFieldsFromData": {
+                            "fill": {
+                              "color": "",
+                              "opacity": ""
+                            },
+                            "stroke": {
+                              "color": "",
+                              "opacity": "",
+                              "width": ""
+                            }
+                          },
+                          "fill": {
+                            "color": "",
+                            "opacity": 1
+                          },
+                          "heatRules": {
+                            "dataField": "",
+                            "enabled": false,
+                            "max": "",
+                            "min": ""
+                          },
+                          "stacked": false,
+                          "stroke": {
+                            "color": "",
+                            "opacity": 1,
+                            "width": 1
+                          }
+                        },
+                        "high": {
+                          "x": "",
+                          "y": ""
+                        },
+                        "low": {
+                          "x": "",
+                          "y": ""
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "column": {
+                        "appearance": {
+                          "deriveFieldsFromData": {
+                            "fill": {
+                              "color": "",
+                              "opacity": ""
+                            },
+                            "stroke": {
+                              "color": "",
+                              "opacity": "",
+                              "width": ""
+                            }
+                          },
+                          "fill": {
+                            "color": "",
+                            "opacity": 1
+                          },
+                          "heatRules": {
+                            "dataField": "",
+                            "enabled": false,
+                            "max": "",
+                            "min": ""
+                          },
+                          "height": null,
+                          "stacked": false,
+                          "stroke": {
+                            "color": "",
+                            "opacity": 1,
+                            "width": 1
+                          },
+                          "width": null
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "data": {
+                        "source": "pareto",
+                        "x": "cause",
+                        "y": "minutes"
+                      },
+                      "defaultState": {
+                        "visible": true
+                      },
+                      "hiddenInLegend": false,
+                      "label": {
+                        "text": ""
+                      },
+                      "line": {
+                        "appearance": {
+                          "bullets": [
+                            {
+                              "deriveFieldsFromData": {
+                                "fill": {
+                                  "color": "",
+                                  "opacity": ""
+                                },
+                                "rotation": "",
+                                "stroke": {
+                                  "color": "",
+                                  "opacity": "",
+                                  "width": ""
+                                }
+                              },
+                              "enabled": false,
+                              "fill": {
+                                "color": "",
+                                "opacity": 1
+                              },
+                              "heatRules": {
+                                "dataField": "",
+                                "enabled": false,
+                                "max": 100,
+                                "min": 2
+                              },
+                              "height": 10,
+                              "label": {
+                                "position": {
+                                  "dx": 0,
+                                  "dy": 0
+                                },
+                                "text": "{value}"
+                              },
+                              "render": "circle",
+                              "rotation": 0,
+                              "stroke": {
+                                "color": "",
+                                "opacity": 1,
+                                "width": 1
+                              },
+                              "tooltip": {
+                                "background": {
+                                  "color": "",
+                                  "opacity": 1
+                                },
+                                "cornerRadius": 3,
+                                "enabled": true,
+                                "pointerLength": 4,
+                                "text": "{name}: [bold]{valueY}[/]"
+                              },
+                              "width": 10
+                            }
+                          ],
+                          "connect": true,
+                          "fill": {
+                            "color": "",
+                            "opacity": 0
+                          },
+                          "minDistance": 0.5,
+                          "stroke": {
+                            "color": "",
+                            "dashArray": "",
+                            "opacity": 1,
+                            "width": 3
+                          },
+                          "tensionX": 1,
+                          "tensionY": 1
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "name": "Downtime Minutes",
+                      "render": "column",
+                      "stepLine": {
+                        "appearance": {
+                          "bullets": [
+                            {
+                              "deriveFieldsFromData": {
+                                "fill": {
+                                  "color": "",
+                                  "opacity": ""
+                                },
+                                "rotation": "",
+                                "stroke": {
+                                  "color": "",
+                                  "opacity": "",
+                                  "width": ""
+                                }
+                              },
+                              "enabled": true,
+                              "fill": {
+                                "color": "",
+                                "opacity": 1
+                              },
+                              "heatRules": {
+                                "dataField": "",
+                                "enabled": false,
+                                "max": 100,
+                                "min": 2
+                              },
+                              "height": 10,
+                              "label": {
+                                "position": {
+                                  "dx": 0,
+                                  "dy": 0
+                                },
+                                "text": "{value}"
+                              },
+                              "render": "circle",
+                              "rotation": 0,
+                              "stroke": {
+                                "color": "",
+                                "opacity": 1,
+                                "width": 1
+                              },
+                              "tooltip": {
+                                "background": {
+                                  "color": "",
+                                  "opacity": 1
+                                },
+                                "cornerRadius": 3,
+                                "enabled": true,
+                                "pointerLength": 4,
+                                "text": "{name}: [bold]{valueY}[/]"
+                              },
+                              "width": 10
+                            }
+                          ],
+                          "connect": true,
+                          "fill": {
+                            "color": "",
+                            "opacity": 0
+                          },
+                          "minDistance": 0.5,
+                          "stroke": {
+                            "color": "",
+                            "dashArray": "",
+                            "opacity": 1,
+                            "width": 3
+                          },
+                          "tensionX": 1,
+                          "tensionY": 1
+                        },
+                        "open": {
+                          "x": "",
+                          "y": ""
+                        }
+                      },
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": "{name}: [bold]{valueY}[/]"
+                      },
+                      "visible": true,
+                      "xAxis": "causeAxis",
+                      "yAxis": "minutesAxis",
+                      "zIndex": 0
+                    },
+                    {
+                      "data": {
+                        "source": "pareto",
+                        "x": "cause",
+                        "y": "cumulative"
+                      },
+                      "name": "Cumulative %",
+                      "render": "line",
+                      "xAxis": "causeAxis",
+                      "yAxis": "pctAxis"
+                    }
+                  ],
+                  "style": {
+                    "flex": "1",
+                    "minHeight": "180px"
+                  },
+                  "xAxes": [
+                    {
+                      "appearance": {
+                        "font": {
+                          "size": "",
+                          "weight": 500
+                        },
+                        "grid": {
+                          "color": "",
+                          "dashArray": "",
+                          "minDistance": null,
+                          "opacity": 1,
+                          "position": 0.5
+                        },
+                        "inside": false,
+                        "labels": {
+                          "color": "",
+                          "horizontalCenter": "middle",
+                          "opacity": 1,
+                          "rotation": 0,
+                          "verticalCenter": "middle"
+                        },
+                        "opposite": false
+                      },
+                      "category": {
+                        "break": {
+                          "enabled": false,
+                          "endCategory": "",
+                          "size": 0.05,
+                          "startCategory": ""
+                        }
+                      },
+                      "date": {
+                        "baseInterval": {
+                          "count": 1,
+                          "enabled": false,
+                          "skipEmptyPeriods": false,
+                          "timeUnit": "hour"
+                        },
+                        "break": {
+                          "enabled": false,
+                          "endDate": "",
+                          "size": 0.05,
+                          "startDate": ""
+                        },
+                        "format": "M/d/yyyy HH:mm:ss",
+                        "inputFormat": "yyyy-MM-dd kk:mm:ss",
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "inversed": false,
+                      "label": {
+                        "color": "",
+                        "enabled": true,
+                        "text": ""
+                      },
+                      "name": "causeAxis",
+                      "render": "category",
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": ""
+                      },
+                      "value": {
+                        "break": {
+                          "enabled": false,
+                          "endValue": 100,
+                          "size": 0.05,
+                          "startValue": 0
+                        },
+                        "format": "#,###.##",
+                        "logarithmic": false,
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "visible": true
+                    }
+                  ],
+                  "yAxes": [
+                    {
+                      "appearance": {
+                        "font": {
+                          "size": "",
+                          "weight": 500
+                        },
+                        "grid": {
+                          "color": "",
+                          "dashArray": "",
+                          "minDistance": null,
+                          "opacity": 1,
+                          "position": 0.5
+                        },
+                        "inside": false,
+                        "labels": {
+                          "color": "",
+                          "horizontalCenter": "middle",
+                          "opacity": 1,
+                          "rotation": 0,
+                          "verticalCenter": "middle"
+                        },
+                        "opposite": false
+                      },
+                      "category": {
+                        "break": {
+                          "enabled": false,
+                          "endCategory": "",
+                          "size": 0.05,
+                          "startCategory": ""
+                        }
+                      },
+                      "date": {
+                        "baseInterval": {
+                          "count": 1,
+                          "enabled": false,
+                          "skipEmptyPeriods": false,
+                          "timeUnit": "hour"
+                        },
+                        "break": {
+                          "enabled": false,
+                          "endDate": "",
+                          "size": 0.05,
+                          "startDate": ""
+                        },
+                        "format": "M/d/yyyy HH:mm:ss",
+                        "inputFormat": "yyyy-MM-dd kk:mm:ss",
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "inversed": false,
+                      "label": {
+                        "color": "",
+                        "enabled": true,
+                        "text": "Downtime (min)"
+                      },
+                      "name": "minutesAxis",
+                      "render": "category",
+                      "tooltip": {
+                        "background": {
+                          "color": "",
+                          "opacity": 1
+                        },
+                        "cornerRadius": 3,
+                        "enabled": true,
+                        "pointerLength": 4,
+                        "text": ""
+                      },
+                      "value": {
+                        "break": {
+                          "enabled": false,
+                          "endValue": 100,
+                          "size": 0.05,
+                          "startValue": 0
+                        },
+                        "format": "#,###.##",
+                        "logarithmic": false,
+                        "range": {
+                          "max": "",
+                          "min": "",
+                          "useStrict": false
+                        }
+                      },
+                      "visible": true
+                    },
+                    {
+                      "label": {
+                        "text": "Cumulative %"
+                      },
+                      "name": "pctAxis",
+                      "opposite": true,
+                      "range": {
+                        "max": 100,
+                        "min": 0
+                      }
+                    }
+                  ]
+                },
+                "type": "ia.chart.xy"
+              }
+            ],
+            "meta": {
+              "name": "paretoCard"
+            },
+            "position": {
+              "grow": 2
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "2",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblTopCausesTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Top Causes (Current Shift)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCause1"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "1) Robot Faults - 19 min (35%)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCause2"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "2) Paint Ready False - 14 min (26%)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCause3"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "3) Conveyor Wait - 11 min (20%)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCause4"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "4) Safety Reset - 6 min (11%)"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblCause5"
+                },
+                "props": {
+                  "style": {
+                    "color": "#374151",
+                    "fontSize": "13px"
+                  },
+                  "text": "5) Operator Delay - 4 min (8%)"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "topCausesCard"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "middleRow"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "gap": "12px",
+          "style": {
+            "flex": "1"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblTimelineTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Downtime Timeline"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblTimelineHint"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px"
+                  },
+                  "text": "Use Power Chart or Time Series: machine state segments by time (RUN/HOLD/FAULT/WAIT)."
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "DowntimeTimelineMarkdown"
+                },
+                "position": {
+                  "basis": "220px",
+                  "grow": 1
+                },
+                "props": {
+                  "source": "```text\nTime  : 07:00    08:00    09:00    10:00    11:00    12:00    13:00    14:00\n        |--------|--------|--------|--------|--------|--------|--------|--------|\n\nRUN   : [\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d  \u003d\u003d\u003d\u003d\u003d\u003d  \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d  \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d  \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d]\nHOLD  : [      \u003d\u003d\u003d\u003d                          \u003d\u003d\u003d\u003d                                  ]\nFAULT : [               \u003d\u003d\u003d                               \u003d\u003d\u003d                      ]\nWAIT  : [            \u003d\u003d                            \u003d\u003d                              ]\n\nLegend:\nRUN   \u003d line producing\nHOLD  \u003d intentional pause\nFAULT \u003d equipment/system fault\nWAIT  \u003d waiting on upstream/downstream\n```",
+                  "style": {
+                    "backgroundColor": "#f8fafc",
+                    "border": "1px solid #e5e7eb",
+                    "borderRadius": "6px",
+                    "color": "#111827",
+                    "fontFamily": "monospace",
+                    "fontSize": "12px",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.display.markdown"
+              }
+            ],
+            "meta": {
+              "name": "timelineCard"
+            },
+            "position": {
+              "grow": 2
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "2",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblActionsTitle"
+                },
+                "props": {
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Actions"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "btnAlarmAnalysis"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2563eb",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Open Alarm Analysis"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "btnExportReport"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#334155",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Export Downtime Report"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "btnCorrectiveAction"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#16a34a",
+                    "color": "#ffffff",
+                    "fontWeight": "700"
+                  },
+                  "text": "Log Corrective Action"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "lblLastUpdate"
+                },
+                "props": {
+                  "style": {
+                    "color": "#6b7280",
+                    "fontSize": "12px",
+                    "marginTop": "8px"
+                  },
+                  "text": "Last update: 2026-03-24 14:22:10"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "actionsCard"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "8px",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "flex": "1",
+                "padding": "12px"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "bottomRow"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "gap": "12px",
+          "style": {
+            "flex": "1"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

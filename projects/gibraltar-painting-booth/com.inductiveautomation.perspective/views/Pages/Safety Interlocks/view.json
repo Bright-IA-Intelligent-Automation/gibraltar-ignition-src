@@ -1,0 +1,732 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#1f2937",
+                    "fontSize": "22px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Safety and Interlocks"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblHeaderInfo"
+                },
+                "props": {
+                  "style": {
+                    "color": "#4b5563",
+                    "fontSize": "13px"
+                  },
+                  "text": "Area: Coating Line | Last Scan: 2026-03-24 14:55:10"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "props": {
+              "alignItems": "center",
+              "justify": "space-between",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "boxShadow": "0 1px 3px rgba(0,0,0,0.12)",
+                "padding": "10px 14px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblChainTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Safety Chain"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblChainValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "OK"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblChainNote"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "SIL path healthy"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tileSafetyChain"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblEstopTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "E-Stops Active"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblEstopValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "0"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblEstopNote"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "12px"
+                      },
+                      "text": "All reset"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tileEstops"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblDoorsTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Doors Secured"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblDoorsValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "6 / 6"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblDoorsNote"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "12px"
+                      },
+                      "text": "All interlocked"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tileDoors"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblPermTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Run Permissives"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPermValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#b45309",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "22 / 23"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPermNote"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#b45309",
+                        "fontSize": "12px"
+                      },
+                      "text": "1 warning active"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tilePermissives"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "statusTiles"
+            },
+            "props": {
+              "gap": "10px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblDoorCardTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Door and Gate Interlock States"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblDoorRow1"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "13px"
+                      },
+                      "text": "Door 1: CLOSED/LOCKED | Door 2: CLOSED/LOCKED | Door 3: CLOSED/LOCKED"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblDoorRow2"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "13px"
+                      },
+                      "text": "Door 4: CLOSED/LOCKED | Door 5: CLOSED/LOCKED | Door 6: CLOSED/LOCKED"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblLayoutPlaceholder"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#64748b",
+                            "fontSize": "13px"
+                          },
+                          "text": "Area Layout Placeholder (doors, gates, zones, E-stop stations)"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "layoutPlaceholder"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#f8fafc",
+                        "borderRadius": "6px",
+                        "minHeight": "170px",
+                        "padding": "10px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "doorInterlockCard"
+                },
+                "position": {
+                  "grow": 2
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "2",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblEstopCardTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "E-Stop Chain Detail"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblEstopMain"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "13px"
+                      },
+                      "text": "Main Line E-Stop: RESET"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblEstopA"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "13px"
+                      },
+                      "text": "Booth A E-Stop: RESET"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblEstopB"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "13px"
+                      },
+                      "text": "Booth B E-Stop: RESET"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblEstopConveyor"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "13px"
+                      },
+                      "text": "Conveyor E-Stop: RESET"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "estopCard"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "mainRow"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "gap": "12px",
+              "style": {
+                "flex": "1"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblChecklistTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Run Permissive Checklist"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPerm1"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "13px"
+                      },
+                      "text": "Safety PLC Healthy: TRUE"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPerm2"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "13px"
+                      },
+                      "text": "Doors Locked: TRUE"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPerm3"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "13px"
+                      },
+                      "text": "Robot Fence Clear: TRUE"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPerm4"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#dc2626",
+                        "fontSize": "13px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Light Curtain Clear: FALSE"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPerm5"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "13px"
+                      },
+                      "text": "Paint System Ready: TRUE"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "permissiveChecklistCard"
+                },
+                "position": {
+                  "grow": 2
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "2",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblActionsTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Safety Actions"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "btnAckSafety"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#2563eb",
+                        "color": "#ffffff",
+                        "fontWeight": "700"
+                      },
+                      "text": "Acknowledge Safety Alarm"
+                    },
+                    "type": "ia.input.button"
+                  },
+                  {
+                    "meta": {
+                      "name": "btnSafetyReset"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#334155",
+                        "color": "#ffffff",
+                        "fontWeight": "700"
+                      },
+                      "text": "Request Safety Reset"
+                    },
+                    "type": "ia.input.button"
+                  },
+                  {
+                    "meta": {
+                      "name": "btnSafetyLog"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#16a34a",
+                        "color": "#ffffff",
+                        "fontWeight": "700"
+                      },
+                      "text": "Open Safety Event Log"
+                    },
+                    "type": "ia.input.button"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblActionNote"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px",
+                        "marginTop": "6px"
+                      },
+                      "text": "Note: Keep command enable by role only."
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "actionsCard"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "bottomRow"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "gap": "12px",
+              "style": {
+                "flex": "1"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "root"
+        },
+        "props": {
+          "direction": "column",
+          "style": {
+            "backgroundColor": "#eef2f6",
+            "gap": "12px",
+            "height": "100%",
+            "padding": "14px"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

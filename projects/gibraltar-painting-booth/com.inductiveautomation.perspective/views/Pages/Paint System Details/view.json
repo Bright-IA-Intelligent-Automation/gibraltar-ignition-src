@@ -1,0 +1,843 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#1f2937",
+                    "fontSize": "22px",
+                    "fontWeight": "700"
+                  },
+                  "text": "Paint System Detail"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblHeaderInfo"
+                },
+                "props": {
+                  "style": {
+                    "color": "#4b5563",
+                    "fontSize": "13px"
+                  },
+                  "text": "Recipe: 33FT_STD | Booth Mode: AUTO | Last Update: 2026-03-24 15:10"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "props": {
+              "alignItems": "center",
+              "justify": "space-between",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "boxShadow": "0 1px 3px rgba(0,0,0,0.12)",
+                "padding": "10px 14px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblReadyTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Paint System Ready"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblReadyValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "TRUE"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblReadyNote"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "All permissives met"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tilePaintReady"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblUsedShiftTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Paint Used (Shift)"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblUsedShiftValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "318.4 gal"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblUsedShiftTarget"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "12px"
+                      },
+                      "text": "Target \u003c\u003d 335 gal"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tilePaintUsedShift"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblMixTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "A:B Mix Ratio"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblMixValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "1.00 : 1.02"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblMixDeviation"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#b45309",
+                        "fontSize": "12px"
+                      },
+                      "text": "Deviation: 1.8%"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tileMixRatio"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblPurgeTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Purge / Waste"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPurgeValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "14.7 gal"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPurgePct"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#b45309",
+                        "fontSize": "12px"
+                      },
+                      "text": "4.6% of total"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tilePurgeWaste"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "kpiRow"
+            },
+            "props": {
+              "gap": "10px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblPermTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Paint Ready Permissives"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblPermTempKey"
+                        },
+                        "props": {
+                          "text": "Paint Temp OK"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPermTempVal"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#16a34a",
+                            "fontWeight": "700"
+                          },
+                          "text": "TRUE"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "permRow1"
+                    },
+                    "props": {
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblPermHumidityKey"
+                        },
+                        "props": {
+                          "text": "Humidity OK"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPermHumidityVal"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#16a34a",
+                            "fontWeight": "700"
+                          },
+                          "text": "TRUE"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "permRow2"
+                    },
+                    "props": {
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblPermAirKey"
+                        },
+                        "props": {
+                          "text": "Air Pressure OK"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPermAirVal"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#16a34a",
+                            "fontWeight": "700"
+                          },
+                          "text": "TRUE"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "permRow3"
+                    },
+                    "props": {
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblPermALevelKey"
+                        },
+                        "props": {
+                          "text": "Component A Level OK"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPermALevelVal"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#16a34a",
+                            "fontWeight": "700"
+                          },
+                          "text": "TRUE"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "permRow4"
+                    },
+                    "props": {
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblPermBLevelKey"
+                        },
+                        "props": {
+                          "text": "Component B Level OK"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPermBLevelVal"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#dc2626",
+                            "fontWeight": "700"
+                          },
+                          "text": "FALSE"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "permRow5"
+                    },
+                    "props": {
+                      "justify": "space-between"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "permissiveCard"
+                },
+                "position": {
+                  "grow": 2
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "2",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblFlowTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Flow and Totals"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblAFlow"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "13px"
+                      },
+                      "text": "A Flow: 1.24 gpm"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblBFlow"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "13px"
+                      },
+                      "text": "B Flow: 1.27 gpm"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblATotal"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "13px"
+                      },
+                      "text": "A Total (Shift): 162.8 gal"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblBTotal"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "13px"
+                      },
+                      "text": "B Total (Shift): 155.6 gal"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblGalPerPanel"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "13px"
+                      },
+                      "text": "Gallons/Panel: 1.86"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "flowCard"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "middleRow"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "gap": "12px",
+              "style": {
+                "flex": "1"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblTrendTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Paint Process Trends"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblTrendHint"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Use Time Series Chart for A/B flow, ratio deviation, pressure, and temperatures."
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblTrendPlaceholder"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#64748b",
+                            "fontSize": "13px"
+                          },
+                          "text": "Trend Placeholder"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "trendPlaceholder"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#f8fafc",
+                        "borderRadius": "6px",
+                        "minHeight": "150px",
+                        "padding": "10px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "trendCard"
+                },
+                "position": {
+                  "grow": 2
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "2",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblActionTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Actions and Alarms"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblAlarm1"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#dc2626",
+                        "fontSize": "13px"
+                      },
+                      "text": "Active Alarm: Component B Low Level"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblAlarm2"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#b45309",
+                        "fontSize": "13px"
+                      },
+                      "text": "Warning: Mix ratio drift \u003e 1.5%"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "btnAckAlarm"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#2563eb",
+                        "color": "#ffffff",
+                        "fontWeight": "700"
+                      },
+                      "text": "Acknowledge Paint Alarm"
+                    },
+                    "type": "ia.input.button"
+                  },
+                  {
+                    "meta": {
+                      "name": "btnStartPurge"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#334155",
+                        "color": "#ffffff",
+                        "fontWeight": "700"
+                      },
+                      "text": "Start Purge Sequence"
+                    },
+                    "type": "ia.input.button"
+                  },
+                  {
+                    "meta": {
+                      "name": "btnPaintLog"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#16a34a",
+                        "color": "#ffffff",
+                        "fontWeight": "700"
+                      },
+                      "text": "Open Paint Event Log"
+                    },
+                    "type": "ia.input.button"
+                  }
+                ],
+                "meta": {
+                  "name": "actionsAndAlarmsCard"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "bottomRow"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "gap": "12px",
+              "style": {
+                "flex": "1"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "root"
+        },
+        "props": {
+          "direction": "column",
+          "style": {
+            "backgroundColor": "#edf1f5",
+            "gap": "12px",
+            "height": "100%",
+            "padding": "14px"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

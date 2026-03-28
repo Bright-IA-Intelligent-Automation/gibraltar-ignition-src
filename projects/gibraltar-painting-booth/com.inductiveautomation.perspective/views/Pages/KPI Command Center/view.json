@@ -1,0 +1,765 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "lblTitle"
+                },
+                "props": {
+                  "style": {
+                    "color": "#1f2937",
+                    "fontSize": "22px",
+                    "fontWeight": "700"
+                  },
+                  "text": "KPI Command Center"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "lblShiftInfo"
+                },
+                "props": {
+                  "style": {
+                    "color": "#4b5563",
+                    "fontSize": "13px"
+                  },
+                  "text": "Shift A | 07:00-18:00 | Job: JOB#BR26ROB18"
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "props": {
+              "alignItems": "center",
+              "justify": "space-between",
+              "style": {
+                "backgroundColor": "#ffffff",
+                "borderRadius": "8px",
+                "boxShadow": "0 1px 3px rgba(0,0,0,0.12)",
+                "padding": "10px 14px"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblPanelsTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Panels / Shift"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPanelsValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "171 / 165"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPanelsDelta"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "12px"
+                      },
+                      "text": "+6 above target"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tilePanelsShift"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblFPYTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "First Pass Yield"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblFPYValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "95.8%"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblFPYTarget"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "12px"
+                      },
+                      "text": "Target \u003e\u003d 95%"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tileFPY"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblCycleTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Avg Cycle Time"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblCycleValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "51 sec"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblCycleTarget"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "12px"
+                      },
+                      "text": "Target \u003c\u003d 55 sec"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tileCycle"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblOEETitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "OEE"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblOEEValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "82.4%"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblOEETarget"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "12px"
+                      },
+                      "text": "Target \u003e\u003d 80%"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tileOEE"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "kpiRow1"
+            },
+            "props": {
+              "gap": "10px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblPaintUsedTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Paint Used (Shift)"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPaintUsedValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "318.4 gal"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblPaintUsedTarget"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "12px"
+                      },
+                      "text": "Target \u003c\u003d 335 gal"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tilePaintUsed"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblGalPanelTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Gallons / Panel"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblGalPanelValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "1.86"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblGalPanelTarget"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "12px"
+                      },
+                      "text": "Recipe target: 1.90"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tileGalPerPanel"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblMixTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "A:B Mix Deviation"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblMixValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "30px",
+                        "fontWeight": "800"
+                      },
+                      "text": "1.8%"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblMixTarget"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#16a34a",
+                        "fontSize": "12px"
+                      },
+                      "text": "Max 3.0%"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tileMixDeviation"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblMTTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "MTTR / MTBF"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblMTValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#111827",
+                        "fontSize": "26px",
+                        "fontWeight": "800"
+                      },
+                      "text": "6.4m / 9.1h"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblMTNote"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#6b7280",
+                        "fontSize": "12px"
+                      },
+                      "text": "Critical faults only"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "tileMTTR"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "10px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "kpiRow2"
+            },
+            "props": {
+              "gap": "10px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblTrendTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Trend Panel (Placeholder)"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblTrendNote"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "13px"
+                      },
+                      "text": "Use this area for Time Series Chart: Throughput, Gallons, FPY, OEE by shift time."
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblTrendPlaceholder"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#64748b",
+                            "fontSize": "13px"
+                          },
+                          "text": "Chart Component Placeholder"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "trendCanvas"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#f8fafc",
+                        "borderRadius": "6px",
+                        "minHeight": "150px",
+                        "padding": "10px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "trendPlaceholderCard"
+                },
+                "position": {
+                  "grow": 2
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "2",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblInsightsTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "700"
+                      },
+                      "text": "Insights"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblInsight1"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "13px"
+                      },
+                      "text": "Top Downtime Cause: Robot faults (34 min)"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblInsight2"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "13px"
+                      },
+                      "text": "Paint efficiency improved 4.1% vs prior shift"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblInsight3"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "13px"
+                      },
+                      "text": "Station clear response average: 3.2 sec"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "btnShiftReport"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#2563eb",
+                        "color": "#ffffff",
+                        "fontWeight": "700",
+                        "marginTop": "8px"
+                      },
+                      "text": "Open Shift Report"
+                    },
+                    "type": "ia.input.button"
+                  }
+                ],
+                "meta": {
+                  "name": "rightInsightsCard"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "gap": "8px",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "flex": "1",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "bottomRow"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "gap": "12px",
+              "style": {
+                "flex": "1"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "root"
+        },
+        "props": {
+          "direction": "column",
+          "style": {
+            "backgroundColor": "#edf1f5",
+            "gap": "12px",
+            "height": "100%",
+            "padding": "14px"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

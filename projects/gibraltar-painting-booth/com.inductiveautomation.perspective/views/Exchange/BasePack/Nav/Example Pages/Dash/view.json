@@ -1,0 +1,47 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "System Performance"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "props": {
+          "params": {
+            "nav": {
+              "isEnabled": true,
+              "isPopup": false,
+              "newTab": false,
+              "pagePath": "/charts",
+              "params": {},
+              "url": "",
+              "viewPath": ""
+            },
+            "params": {},
+            "path": "Exchange/BasePack/Dash/Embedded/System",
+            "title": "System",
+            "useDefaultHeight": false,
+            "useDefaultWidth": false
+          },
+          "path": "Exchange/BasePack/Dash/Embedded/Card"
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "alignItems": "flex-start",
+      "style": {
+        "classes": "page"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

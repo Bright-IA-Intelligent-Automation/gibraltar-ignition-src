@@ -1,0 +1,441 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "title"
+            },
+            "props": {
+              "style": {
+                "color": "#1f2937",
+                "fontSize": "22px",
+                "fontWeight": "700"
+              },
+              "text": "Border Wall Coating - Overview"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "btnStart"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#16a34a",
+                    "color": "#ffffff",
+                    "fontWeight": "600"
+                  },
+                  "text": "Start"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "btnHold"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#f59e0b",
+                    "color": "#ffffff",
+                    "fontWeight": "600"
+                  },
+                  "text": "Hold"
+                },
+                "type": "ia.input.button"
+              },
+              {
+                "meta": {
+                  "name": "btnStationClear"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2563eb",
+                    "color": "#ffffff",
+                    "fontWeight": "600"
+                  },
+                  "text": "Station Clear"
+                },
+                "type": "ia.input.button"
+              }
+            ],
+            "meta": {
+              "name": "headerActions"
+            },
+            "props": {
+              "gap": "8px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "headerBar"
+        },
+        "props": {
+          "alignItems": "center",
+          "justify": "space-between",
+          "style": {
+            "backgroundColor": "#ffffff",
+            "borderRadius": "8px",
+            "boxShadow": "0 1px 3px rgba(0,0,0,0.12)",
+            "padding": "12px 16px"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblPanelsShiftTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#6b7280",
+                            "fontSize": "13px"
+                          },
+                          "text": "Panels / Shift"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPanelsShiftValue"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#111827",
+                            "fontSize": "28px",
+                            "fontWeight": "700"
+                          },
+                          "text": "142 / 165"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "kpiPanelsShift"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": "8px",
+                        "flex": "1",
+                        "padding": "10px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblPaintGalTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#6b7280",
+                            "fontSize": "13px"
+                          },
+                          "text": "Paint Used (gal)"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblPaintGalValue"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#111827",
+                            "fontSize": "28px",
+                            "fontWeight": "700"
+                          },
+                          "text": "318.4"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "kpiPaintGallons"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": "8px",
+                        "flex": "1",
+                        "padding": "10px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "lblFPYTitle"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#6b7280",
+                            "fontSize": "13px"
+                          },
+                          "text": "First Pass Yield"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "lblFPYValue"
+                        },
+                        "props": {
+                          "style": {
+                            "color": "#111827",
+                            "fontSize": "28px",
+                            "fontWeight": "700"
+                          },
+                          "text": "96.2%"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "kpiFPY"
+                    },
+                    "position": {
+                      "grow": 1
+                    },
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "backgroundColor": "#ffffff",
+                        "borderRadius": "8px",
+                        "flex": "1",
+                        "padding": "10px"
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "kpiRow1"
+                },
+                "props": {
+                  "gap": "10px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblLineStatusTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "600",
+                        "marginBottom": "6px"
+                      },
+                      "text": "Line Status"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblLineStatusValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "14px"
+                      },
+                      "text": "Booth A: RUNNING | Booth B: RUNNING | Paint System: READY"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "lineStatusPanel"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "minHeight": "220px",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "leftColumn"
+            },
+            "position": {
+              "grow": 2
+            },
+            "props": {
+              "direction": "column",
+              "gap": "10px",
+              "style": {
+                "flex": "2"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblAlarmSummaryTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "600"
+                      },
+                      "text": "Alarm Summary"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblAlarmSummaryValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "14px",
+                        "marginTop": "8px"
+                      },
+                      "text": "Active: 2 | Unacked: 1 | Critical: 0"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "alarmSummaryCard"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "minHeight": "150px",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "lblActiveJobTitle"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "600"
+                      },
+                      "text": "Active Job"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "lblActiveJobValue"
+                    },
+                    "props": {
+                      "style": {
+                        "color": "#374151",
+                        "fontSize": "14px",
+                        "marginTop": "8px"
+                      },
+                      "text": "JOB#BR26ROB18 - Recipe 33FT_STD"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "jobInfoCard"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": "8px",
+                    "minHeight": "150px",
+                    "padding": "12px"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "rightColumn"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "gap": "10px",
+              "style": {
+                "flex": "1"
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "body"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "gap": "12px",
+          "style": {
+            "flex": "1"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

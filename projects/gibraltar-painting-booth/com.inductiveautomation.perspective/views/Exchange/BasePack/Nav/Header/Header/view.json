@@ -1,0 +1,520 @@
+{
+  "custom": {
+    "size": "small"
+  },
+  "params": {
+    "params": {}
+  },
+  "propConfig": {
+    "custom.size": {
+      "binding": {
+        "config": {
+          "path": "page.props.dimensions.viewport.width"
+        },
+        "transforms": [
+          {
+            "fallback": "large",
+            "inputType": "range",
+            "mappings": [
+              {
+                "input": {
+                  "max": 1000,
+                  "min": 0
+                },
+                "output": "small"
+              }
+            ],
+            "outputType": "scalar",
+            "type": "map"
+          },
+          {
+            "expression": "if({session.props.device.type}\u003d\u0027designer\u0027,\"large\",{value})",
+            "type": "expression"
+          }
+        ],
+        "type": "property"
+      },
+      "persistent": true
+    },
+    "params.params": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 50,
+      "width": 1000
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "events": {
+          "dom": {
+            "onClick": [
+              {
+                "config": {
+                  "script": "\tif self.props.path \u003d\u003d \u0027material/menu\u0027:\n\t\tsystem.perspective.openDock(id\u003d\u0027menu\u0027)\n\t\tself.props.path \u003d \u0027material/menu_open\u0027\n#\t\tsystem.perspective.alterDock(dockId\u003d\u0027menu\u0027, config\u003d{\u0027display\u0027:\u0027visible\u0027, \u0027content\u0027:\u0027push\u0027})\n\t\t\n\telse:\n\t\tsystem.perspective.closeDock(id\u003d\u0027menu\u0027)\n\t\tself.props.path \u003d \u0027material/menu\u0027\n#\t\tsystem.perspective.alterDock(dockId\u003d\u0027menu\u0027, config\u003d{\u0027display\u0027:\u0027onDemand\u0027, \u0027content\u0027:\u0027push\u0027})"
+                },
+                "enabled": false,
+                "scope": "G",
+                "type": "script"
+              },
+              {
+                "config": {
+                  "script": "\tif not self.session.custom.navigation.sideMenu.leftOpen:\n\t\tself.session.custom.navigation.sideMenu.leftOpen \u003d True\n\telse:\n\t\tself.session.custom.navigation.sideMenu.leftOpen \u003d False"
+                },
+                "scope": "G",
+                "type": "script"
+              }
+            ]
+          }
+        },
+        "meta": {
+          "name": "Menu Action",
+          "tooltip": {
+            "delay": 1000,
+            "enabled": true,
+            "location": "center-right"
+          }
+        },
+        "position": {
+          "basis": "40px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "meta.tooltip.text": {
+            "binding": {
+              "config": {
+                "expression": "if({session.custom.navigation.sideMenu.leftOpen},\u0027Close sidebar\u0027,\u0027Keep sidebar\u0027)"
+              },
+              "type": "expr"
+            }
+          },
+          "props.path": {
+            "binding": {
+              "config": {
+                "expression": "if({session.custom.navigation.sideMenu.leftOpen},\u0027material/menu_open\u0027,\u0027material/menu\u0027)"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "classes": "nav-header-button",
+            "display": "flex"
+          }
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "Separator"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "props": {
+          "style": {
+            "classes": "nav-header-button-separator"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tsystem.perspective.navigateBack()"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Nav Back",
+          "tooltip": {
+            "delay": 1000,
+            "enabled": true,
+            "location": "bottom",
+            "text": "Navigate Back"
+          }
+        },
+        "position": {
+          "basis": "40px",
+          "shrink": 0
+        },
+        "props": {
+          "path": "material/keyboard_arrow_left",
+          "style": {
+            "classes": "nav-header-button",
+            "display": "flex"
+          }
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tsystem.perspective.navigateForward()"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Nav For",
+          "tooltip": {
+            "delay": 1000,
+            "enabled": true,
+            "location": "bottom",
+            "text": "Navigate Forward"
+          }
+        },
+        "position": {
+          "basis": "40px",
+          "shrink": 0
+        },
+        "props": {
+          "path": "material/keyboard_arrow_right",
+          "style": {
+            "classes": "nav-header-button",
+            "display": "flex"
+          }
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "Separator_0"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "props": {
+          "style": {
+            "classes": "nav-header-button-separator"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {},
+              "scope": "C",
+              "type": "refresh"
+            }
+          }
+        },
+        "meta": {
+          "name": "Refresh",
+          "tooltip": {
+            "delay": 1000,
+            "enabled": true,
+            "location": "bottom",
+            "text": "Refresh"
+          }
+        },
+        "position": {
+          "basis": "40px",
+          "display": false,
+          "shrink": 0
+        },
+        "props": {
+          "path": "material/refresh",
+          "style": {
+            "classes": "nav-header-button",
+            "display": "flex"
+          }
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "FlexRepeater",
+          "tooltip": {
+            "text": "0"
+          }
+        },
+        "position": {
+          "grow": 1
+        },
+        "propConfig": {
+          "props.instances": {
+            "binding": {
+              "config": {
+                "struct": {
+                  "path": "{page.props.path}",
+                  "viewportWidth": "{page.props.dimensions.viewport.width}"
+                },
+                "waitOnAll": true
+              },
+              "transforms": [
+                {
+                  "code": "\tinstances \u003d []\n\tpath \u003d \"\"\n\tallPages \u003d [i[\u0027url\u0027] for i in system.perspective.getProjectInfo()[\"pageConfigs\"]]\n\tpages \u003d self.page.props.path.split(\"/\")[1:]\n\tfor i, label in enumerate(pages):\n\t\tif label !\u003d \"\":\n\t\t\tpath \u003d path + \"/\" + label\n\t\t\tif self.page.props.dimensions.viewport.width \u003c\u003d 450:\n\t\t\t\tinstances \u003d [{\n\t\t\t\t  \"instanceStyle\": {\n\t\t\t\t    \"classes\": \"\"\n\t\t\t\t  },\n\t\t\t\t  \"instancePosition\": {},\n\t\t\t\t  \"icon\": \"\",#\"material/arrow_right\",\n#\t\t\t\t  \"index\": 1,\n\t\t\t\t  \"isLink\": path in allPages,\n\t\t\t\t  \"label\": label,\n\t\t\t\t  \"parentIndex\": 0,\n\t\t\t\t  \"showArrow\": False,\n\t\t\t\t  \"target\": path\n\t\t\t\t}]\n\t\t\telse:\n\t\t\t\tinstances.append({\n\t\t\t\t  \"instanceStyle\": {\n\t\t\t\t    \"classes\": \"\"\n\t\t\t\t  },\n\t\t\t\t  \"instancePosition\": {},\n\t\t\t\t  \"icon\": \"\",#\"material/arrow_right\",\n#\t\t\t\t  \"index\": 1,\n\t\t\t\t  \"isLink\": path in allPages,\n\t\t\t\t  \"label\": label,\n\t\t\t\t  \"parentIndex\": 0,\n\t\t\t\t  \"showArrow\": False,\n\t\t\t\t  \"target\": path\n\t\t\t\t})\t\n\t\t\t\n\treturn instances",
+                  "type": "script"
+                }
+              ],
+              "type": "expr-struct"
+            }
+          }
+        },
+        "props": {
+          "elementPosition": {
+            "basis": "auto",
+            "grow": 0,
+            "shrink": 0
+          },
+          "path": "Exchange/BasePack/Nav/Header/Embedded/Breadcrumb Item",
+          "style": {
+            "gap": "0px",
+            "overflow": "hidden"
+          },
+          "useDefaultViewHeight": false,
+          "useDefaultViewWidth": false
+        },
+        "type": "ia.display.flex-repeater"
+      },
+      {
+        "meta": {
+          "name": "Theme_0",
+          "visible": false
+        },
+        "position": {
+          "display": false,
+          "shrink": 0
+        },
+        "propConfig": {
+          "position.display": {
+            "binding": {
+              "config": {
+                "expression": "{view.custom.size} \u003d \"large\""
+              },
+              "enabled": false,
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "loading": {
+            "order": "with-parent"
+          },
+          "path": "Exchange/BasePack/Nav/Embedded/Notifications",
+          "style": {
+            "classes": "nav-link"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "FlexRepeater_0",
+          "tooltip": {
+            "text": "0"
+          }
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "elementPosition": {
+            "basis": "auto",
+            "grow": 0,
+            "shrink": 0
+          },
+          "style": {
+            "gap": "0px",
+            "overflow": "hidden"
+          },
+          "useDefaultViewHeight": false,
+          "useDefaultViewWidth": false
+        },
+        "type": "ia.display.flex-repeater"
+      },
+      {
+        "meta": {
+          "name": "User"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "propConfig": {
+          "position.display": {
+            "binding": {
+              "config": {
+                "expression": "{view.custom.size} \u003d \"large\""
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "path": "Exchange/BasePack/Nav/Embedded/User",
+          "style": {
+            "classes": "nav-link"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Theme"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "propConfig": {
+          "position.display": {
+            "binding": {
+              "config": {
+                "expression": "{view.custom.size} \u003d \"large\""
+              },
+              "enabled": false,
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "loading": {
+            "order": "with-parent"
+          },
+          "params": {
+            "iconOnly": true
+          },
+          "path": "Exchange/BasePack/Nav/Embedded/Theme",
+          "style": {
+            "classes": "nav-link"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Time"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "propConfig": {
+          "position.display": {
+            "binding": {
+              "config": {
+                "expression": "{view.custom.size} \u003d \"large\""
+              },
+              "enabled": false,
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "noIcon": true
+          },
+          "path": "Exchange/BasePack/Nav/Embedded/Time",
+          "style": {
+            "classes": "nav-not-a-link",
+            "fontWeight": "normal"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Alarms"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.enableModal": {
+            "binding": {
+              "config": {
+                "expression": "{view.custom.size} \u003d \"large\""
+              },
+              "type": "expr"
+            }
+          },
+          "props.params.iconOnly": {
+            "binding": {
+              "config": {
+                "expression": "{view.custom.size} !\u003d \"large\""
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "path": "Exchange/BasePack/Nav/Embedded/Alarms",
+          "style": {
+            "classes": "nav-link"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {},
+                  "scope": "C",
+                  "type": "logout"
+                }
+              }
+            },
+            "meta": {
+              "name": "Icon",
+              "tooltip": {
+                "enabled": true,
+                "text": "Log Out"
+              }
+            },
+            "position": {
+              "basis": "30px"
+            },
+            "props": {
+              "path": "material/exit_to_app",
+              "style": {
+                "classes": "nav-header-button",
+                "display": "flex"
+              }
+            },
+            "type": "ia.display.icon"
+          }
+        ],
+        "meta": {
+          "name": "logout"
+        },
+        "props": {
+          "justify": "flex-end",
+          "style": {
+            "alignItems": "center",
+            "marginRight": "10px"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "classes": "nav-header",
+        "overflow": "hidden"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

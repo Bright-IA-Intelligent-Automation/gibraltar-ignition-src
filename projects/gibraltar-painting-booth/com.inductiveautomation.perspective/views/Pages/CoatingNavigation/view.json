@@ -1,0 +1,81 @@
+{
+  "custom": {},
+  "params": {
+    "page": "overview"
+  },
+  "propConfig": {
+    "params.page": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "width": 1032
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "EmbeddedView"
+        },
+        "position": {
+          "grow": 1
+        },
+        "propConfig": {
+          "props.path": {
+            "binding": {
+              "config": {
+                "path": "view.params.page"
+              },
+              "transforms": [
+                {
+                  "fallback": null,
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": "overview",
+                      "output": "Pages/Leadership View"
+                    },
+                    {
+                      "input": "booth-detail",
+                      "output": "Pages/Booth Details"
+                    },
+                    {
+                      "input": "paint-system",
+                      "output": "Pages/Paint System Details"
+                    },
+                    {
+                      "input": "part-flow",
+                      "output": "Pages/Part Flow"
+                    },
+                    {
+                      "input": "safety-interlocks",
+                      "output": "Pages/Safety Interlocks"
+                    },
+                    {
+                      "input": "recipes",
+                      "output": "Pages/Recipe"
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

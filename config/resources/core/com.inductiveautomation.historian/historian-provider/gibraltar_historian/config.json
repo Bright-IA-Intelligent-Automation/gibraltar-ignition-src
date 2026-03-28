@@ -1,0 +1,22 @@
+{
+  "profile": {
+    "type": "SqlHistorian"
+  },
+  "settings": {
+    "database": "gibraltar_db",
+    "partition": {
+      "enabled": true,
+      "optimized": false,
+      "optimizedWindowSeconds": 60,
+      "size": 1,
+      "sizeUnits": "MONTH"
+    },
+    "pruning": {
+      "age": 5,
+      "ageUnits": "YEAR",
+      "enabled": true
+    },
+    "staleMultiplier": 2,
+    "trackSce": true
+  }
+}
